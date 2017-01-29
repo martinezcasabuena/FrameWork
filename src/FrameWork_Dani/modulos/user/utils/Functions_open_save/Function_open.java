@@ -4,7 +4,7 @@ import FrameWork_Dani.clases.Settings;
 
 public class Function_open {
 	
-public static void OpenGenericOnDemand(int opt){
+	public static void OpenGenericOnDemand(int opt){
 		
 		String saveFormat=Settings.getSaveFormat(); //Obtengo el formato de guardado		
 		switch (opt) {//Switch para saber en que usuario ha entrado

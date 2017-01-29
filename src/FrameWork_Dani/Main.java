@@ -79,8 +79,7 @@ public class Main {
 								Functions_order.OrderNormal();
 								break;
 							case 5:
-								Functions_save_users.AutoSaveJsonNormal();
-								//Function_save.SaveGenericOnDemand(opt);
+								Function_save.SaveGenericOnDemand(opt);
 								break;
 							case 6:
 								Function_open.OpenGenericOnDemand(opt);
@@ -124,7 +123,7 @@ public class Main {
 								Function_open.OpenGenericOnDemand(opt);
 								break;
 							case 7:
-								Function_save.SaveGenericOnDemand(opt);
+								Function_save.SaveGenericAuto(opt);
 								break;
 							}
 						}
@@ -162,7 +161,7 @@ public class Main {
 								Function_open.OpenGenericOnDemand(opt);
 								break;
 							case 7:
-								Function_save.SaveGenericOnDemand(opt);
+								Function_save.SaveGenericAuto(opt);
 								break;
 							}
 						}
