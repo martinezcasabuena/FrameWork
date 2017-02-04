@@ -6,7 +6,7 @@ public class Function_save {
 	
 	public static void SaveGenericOnDemand(int opt){
 		
-		String saveFormat=Settings.getSaveFormat(); //Obtengo el formato de guardado		
+		String saveFormat=Settings.getInstance().getSaveFormat(); //Obtengo el formato de guardado		
 		switch (opt) {//Switch para saber en que usuario ha entrado
 		case 0: //Entra en el usuario Normal
 			switch (saveFormat) {//Switch para saber que formato esta seleccionado en Settings
@@ -60,7 +60,7 @@ public class Function_save {
 	
 	public static void SaveGenericAuto(int opt){
 		
-		String saveFormat=Settings.getSaveFormat(); //Obtengo el formato de guardado		
+		String saveFormat=Settings.getInstance().getSaveFormat(); //Obtengo el formato de guardado		
 		switch (opt) {//Switch para saber en que usuario ha entrado
 		case 0: //Entra en el usuario Normal
 			switch (saveFormat) {//Switch para saber que formato esta seleccionado en Settings

@@ -6,12 +6,19 @@ import java.util.Properties;
 import FrameWork_Dani.utils.Functions;
 
 public class Language extends Properties {
-	//private static final long serialVersionUID = 1L;
 	private String language="English";
+	private static Language instance;
 	
 	public Language (){
 	        getProperties("EN.properties");
 
+	}
+	
+	public static Language getInstance () {
+		if (instance==null){
+			instance = new Language();
+		}
+		return instance;
 	}
 	
 	public Language (String language){

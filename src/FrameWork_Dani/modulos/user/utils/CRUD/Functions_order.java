@@ -22,20 +22,20 @@ public class Functions_order {
 	
 	public static void OrderNormal(){
 		
-		String [] options = { "A) "+Settings.lang.getProperty("dni"),
-							  "B) "+Settings.lang.getProperty("name"),
-							  "C) "+Settings.lang.getProperty("birth_date"),
-							  "D) "+Settings.lang.getProperty("age"),
-							  "E) "+Settings.lang.getProperty("n_comments"),
-							  "F) "+Settings.lang.getProperty("points")
+		String [] options = { "A) "+Settings.getInstance().lang.getProperty("dni"),
+							  "B) "+Settings.getInstance().lang.getProperty("name"),
+							  "C) "+Settings.getInstance().lang.getProperty("birth_date"),
+							  "D) "+Settings.getInstance().lang.getProperty("age"),
+							  "E) "+Settings.getInstance().lang.getProperty("n_comments"),
+							  "F) "+Settings.getInstance().lang.getProperty("points")
 							};
 		String menu = "";
 		char order = ' ';
 		
 		if(Singleton.userNormal.isEmpty()){
-			JOptionPane.showMessageDialog(null, Settings.lang.getProperty("no_user"),Settings.lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, Settings.getInstance().lang.getProperty("no_user"),Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = Functions.ComboMenu(options, Settings.lang.getProperty("order_message"),Settings.lang.getProperty("order"));
+			menu = Functions.ComboMenu(options, Settings.getInstance().lang.getProperty("order_message"),Settings.getInstance().lang.getProperty("order"));
 			order = menu.charAt(0);
 			switch (order) {
 				case 'A':
@@ -62,20 +62,20 @@ public class Functions_order {
 	
 	public static void OrderClient(){
 		
-		String [] options = { "A) "+Settings.lang.getProperty("dni"),
-							  "B) "+Settings.lang.getProperty("name"),
-							  "C) "+Settings.lang.getProperty("birth_date"),
-							  "D) "+Settings.lang.getProperty("age"),
-							  "E) "+Settings.lang.getProperty("date_up"),
-							  "F) "+Settings.lang.getProperty("purchases")
+		String [] options = { "A) "+Settings.getInstance().lang.getProperty("dni"),
+							  "B) "+Settings.getInstance().lang.getProperty("name"),
+							  "C) "+Settings.getInstance().lang.getProperty("birth_date"),
+							  "D) "+Settings.getInstance().lang.getProperty("age"),
+							  "E) "+Settings.getInstance().lang.getProperty("date_up"),
+							  "F) "+Settings.getInstance().lang.getProperty("purchases")
 							};
 		String menu = "";
 		char order = ' ';
 		
 		if(Singleton.userCliente.isEmpty()){
-			JOptionPane.showMessageDialog(null, Settings.lang.getProperty("no_user"),Settings.lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, Settings.getInstance().lang.getProperty("no_user"),Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = Functions.ComboMenu(options, Settings.lang.getProperty("order_message"),Settings.lang.getProperty("order"));
+			menu = Functions.ComboMenu(options, Settings.getInstance().lang.getProperty("order_message"),Settings.getInstance().lang.getProperty("order"));
 			order = menu.charAt(0);
 			switch (order) {
 				case 'A':
@@ -103,21 +103,21 @@ public class Functions_order {
 	
 	public static void OrderAdmin(){
 		
-		String [] options = { "A) "+Settings.lang.getProperty("dni"),
-							  "B) "+Settings.lang.getProperty("name"),
-							  "C) "+Settings.lang.getProperty("birth_date"),
-							  "D) "+Settings.lang.getProperty("age"),
-							  "E) "+Settings.lang.getProperty("contract_date"),
-							  "F) "+Settings.lang.getProperty("seniority"),
-							  "G) "+Settings.lang.getProperty("salary")
+		String [] options = { "A) "+Settings.getInstance().lang.getProperty("dni"),
+							  "B) "+Settings.getInstance().lang.getProperty("name"),
+							  "C) "+Settings.getInstance().lang.getProperty("birth_date"),
+							  "D) "+Settings.getInstance().lang.getProperty("age"),
+							  "E) "+Settings.getInstance().lang.getProperty("contract_date"),
+							  "F) "+Settings.getInstance().lang.getProperty("seniority"),
+							  "G) "+Settings.getInstance().lang.getProperty("salary")
 							};
 		String menu = "";
 		char order = ' ';
 		
 		if(Singleton.userAdmin.isEmpty()){
-			JOptionPane.showMessageDialog(null, Settings.lang.getProperty("no_user"),Settings.lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, Settings.getInstance().lang.getProperty("no_user"),Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = Functions.ComboMenu(options, Settings.lang.getProperty("order_message"),Settings.lang.getProperty("order"));
+			menu = Functions.ComboMenu(options, Settings.getInstance().lang.getProperty("order_message"),Settings.getInstance().lang.getProperty("order"));
 			order = menu.charAt(0);
 			switch (order) {
 				case 'A':

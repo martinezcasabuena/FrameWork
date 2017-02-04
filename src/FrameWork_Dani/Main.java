@@ -8,6 +8,7 @@ import FrameWork_Dani.clases.Fecha;
 import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.utils.Format;
 import FrameWork_Dani.utils.Functions;
+import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
 import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Normal;
 import FrameWork_Dani.modulos.user.clases.Cliente;
@@ -36,19 +37,20 @@ public class Main {
 		User cliente = null;
 		User admin = null;
 		User normal = null;
-		String fechaForm="dd/mm/yyyy";
-		settings= new Settings();
+		Settings.getInstance();
 		
+		/*
 		Singleton.userNormal=new ArrayList <Normal> ();
 		Singleton.userCliente = new ArrayList <Cliente> ();
 		Singleton.userAdmin = new ArrayList <Admin> ();
+		*/
 		
 		do {
-			String options[] = { Settings.lang.getProperty("normal"), Settings.lang.getProperty("client"),Settings.lang.getProperty("admin"),
-					 Settings.lang.getProperty("options"),Settings.lang.getProperty("exit") };
-			String setting[] = {Settings.lang.getProperty("date_format"),Settings.lang.getProperty("currency"),Settings.lang.getProperty("decimal"),
-					Settings.lang.getProperty("language"),Settings.lang.getProperty("dummies"),Settings.lang.getProperty("save_format"),
-					Settings.lang.getProperty("back")};
+			String options[] = { Settings.getInstance().lang.getProperty("normal"), Settings.getInstance().lang.getProperty("client"),Settings.getInstance().lang.getProperty("admin"),
+					 Settings.getInstance().lang.getProperty("options"),Settings.getInstance().lang.getProperty("exit") };
+			String setting[] = {Settings.getInstance().lang.getProperty("date_format"),Settings.getInstance().lang.getProperty("currency"),Settings.getInstance().lang.getProperty("decimal"),
+					Settings.getInstance().lang.getProperty("language"),Settings.getInstance().lang.getProperty("dummies"),Settings.getInstance().lang.getProperty("save_format"),
+					Settings.getInstance().lang.getProperty("back")};
 					
 			opt = Functions.MenuP(options);
 			if (opt == -1) {
@@ -178,7 +180,7 @@ public class Main {
 						} else {
 							switch (opt2) {
 							case 0:
-								fechaForm=Fecha.fechaForm(); //Guardamos el formato fecha en una variable
+								Fecha.fechaForm(); //Guardamos el formato fecha en una variable
 								break;
 							case 1:
 								Format.CurrencyFormat(); //Guardamos la moneda en una variable dentro de la clase Format
@@ -188,14 +190,17 @@ public class Main {
 								break;
 							case 3:
 								String languageOpt=Language.LanguageOptions(); //Guardamos el idioma en una variable dentro de la clase Language
-								Settings.lang.setLanguage(languageOpt);
+								Settings.getInstance().lang.setLanguage(languageOpt);
 								break;
 							case 4:
-								JOptionPane.showMessageDialog(null,Settings.lang.getProperty("SwitchDummiesEnter"));
+								JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("SwitchDummiesEnter"));
 								Main_dummies.main(args);
 								break;
 							case 5:
 								Format.SaveFormat();
+								break;
+							case 6:
+								Save_Settings.SaveJsonSettings();
 								break;
 							}
 						}

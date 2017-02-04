@@ -18,9 +18,9 @@ public class Functions_create {
 		location = Functions_find.find_normal((Normal) normal);
 		
 		if (location != -1) {
-			JOptionPane.showMessageDialog(null,Settings.lang.getProperty("si_user"), Settings.lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("si_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		} else {
-			normal=(Normal) Functions_user.CreateUser_Generic(0,Settings.fechaForm);
+			normal=(Normal) Functions_user.CreateUser_Generic(0,Settings.getInstance().fechaForm);
 			Singleton.userNormal.add((Normal) normal);
 		}
 	}
@@ -31,9 +31,9 @@ public class Functions_create {
 		location = Functions_find.find_client((Cliente) cliente);
 		
 		if (location != -1) {
-			JOptionPane.showMessageDialog(null,Settings.lang.getProperty("si_user"), Settings.lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("si_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		} else {
-			cliente=(Cliente) Functions_user.CreateUser_Generic(1,Settings.fechaForm);
+			cliente=(Cliente) Functions_user.CreateUser_Generic(1,Settings.getInstance().fechaForm);
 			Singleton.userCliente.add((Cliente) cliente);
 		}
 	}
@@ -44,9 +44,9 @@ public class Functions_create {
 		location = Functions_find.find_admin((Admin) admin);
 		
 		if (location != -1) {
-			JOptionPane.showMessageDialog(null,Settings.lang.getProperty("si_user"), Settings.lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("si_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		} else {
-			admin=(Admin) Functions_user.CreateUser_Generic(2,Settings.fechaForm);
+			admin=(Admin) Functions_user.CreateUser_Generic(2,Settings.getInstance().fechaForm);
 			Singleton.userAdmin.add((Admin) admin);
 		}
 	}

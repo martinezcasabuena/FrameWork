@@ -10,7 +10,6 @@ public class Format {
 	public static int decimal=1;
 	
 	public static void CurrencyFormat(){
-		//String currency="";
 		String opt="";
     	String currencyOpt[] = {"€","$","£"};
     	
@@ -18,15 +17,15 @@ public class Format {
     	switch (opt) {
     	case "€":
     		currency="€";
-    		Settings.setCurrency(currency);
+    		Settings.getInstance().setCurrency(currency);
     		break;
     	case "$":
     		currency="$";
-    		Settings.setCurrency(currency);
+    		Settings.getInstance().setCurrency(currency);
     		break;
     	case "£":
     		currency="£";
-    		Settings.setCurrency(currency);
+    		Settings.getInstance().setCurrency(currency);
     		break;
 		}
 	}
@@ -39,15 +38,15 @@ public class Format {
 		switch(opt){
 		case "1":
 			decimal=1;
-			Settings.setDecimal(decimal);
+			Settings.getInstance().setDecimal(decimal);
 			break;
 		case "2":
 			decimal=2;
-			Settings.setDecimal(decimal);
+			Settings.getInstance().setDecimal(decimal);
 			break;
 		case "3":
 			decimal=3;
-			Settings.setDecimal(decimal);
+			Settings.getInstance().setDecimal(decimal);
 			break;
 		}
 	}
@@ -78,13 +77,13 @@ public class Format {
     	
     	switch (opt) {
 		case "TXT":
-			Settings.setSaveFormat("TXT");
+			Settings.getInstance().setSaveFormat("TXT");
 			break;
 		case "XML":
-			Settings.setSaveFormat("XML");
+			Settings.getInstance().setSaveFormat("XML");
 			break;
 		case "JSON":
-			Settings.setSaveFormat("JSON");
+			Settings.getInstance().setSaveFormat("JSON");
 			break;
 		}
 		

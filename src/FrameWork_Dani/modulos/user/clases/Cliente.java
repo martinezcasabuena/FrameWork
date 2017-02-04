@@ -61,16 +61,16 @@ public class Cliente extends User {
 	
 	public String toString(){
 		String cad="";
-		cad=cad+(Settings.lang.getProperty("name_is")+this.getNom()+"\n");
-		cad=cad+(Settings.lang.getProperty("address_is")+this.getAdreca()+"\n");
-		cad=cad+(Settings.lang.getProperty("sex_is")+this.getSexe()+"\n");
-		cad=cad+(Settings.lang.getProperty("birthDate_is")+this.getFechaNac().toStringFecha()+"\n");
-		cad=cad+(Settings.lang.getProperty("age_is")+this.getEdad()+"\n");
-		cad=cad+(Settings.lang.getProperty("dni_is")+this.getDni()+"\n");
-		cad=cad+(Settings.lang.getProperty("systemDate_is")+this.getFechaAlta().toStringFecha()+"\n");
-		cad=cad+(Settings.lang.getProperty("naccount_is")+this.getNcuenta()+"\n");
-		cad=cad+(Settings.lang.getProperty("purchases_is")+this.getCompras()+"\n");
-		cad=cad+(Settings.lang.getProperty("dto_is")+this.getDescuento()+"% \n");
+		cad=cad+(Settings.getInstance().lang.getProperty("name_is")+this.getNom()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("address_is")+this.getAdreca()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("sex_is")+this.getSexe()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("birthDate_is")+this.getFechaNac().toStringFecha()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("age_is")+this.getEdad()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("dni_is")+this.getDni()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("systemDate_is")+this.getFechaAlta().toStringFecha()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("naccount_is")+this.getNcuenta()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("purchases_is")+this.getCompras()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("dto_is")+this.getDescuento()+"% \n");
 		return cad;
 		
 	}

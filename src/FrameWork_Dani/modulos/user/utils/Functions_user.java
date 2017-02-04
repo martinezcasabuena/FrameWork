@@ -21,10 +21,10 @@ public class Functions_user {
 	
 	public static int CrudMenu() {
 		int opt = 0;
-		String options[] = { Settings.lang.getProperty("create") ,Settings.lang.getProperty("read"),Settings.lang.getProperty("update"),
-				Settings.lang.getProperty("delete"), Settings.lang.getProperty("order"),Settings.lang.getProperty("save"),
-				Settings.lang.getProperty("open"),Settings.lang.getProperty("exit") };
-		opt = JOptionPane.showOptionDialog(null, Settings.lang.getProperty("choose_opt"), Settings.lang.getProperty("crud_menu"), 0, JOptionPane.QUESTION_MESSAGE, null,
+		String options[] = { Settings.getInstance().lang.getProperty("create") ,Settings.getInstance().lang.getProperty("read"),Settings.getInstance().lang.getProperty("update"),
+				Settings.getInstance().lang.getProperty("delete"), Settings.getInstance().lang.getProperty("order"),Settings.getInstance().lang.getProperty("save"),
+				Settings.getInstance().lang.getProperty("open"),Settings.getInstance().lang.getProperty("exit") };
+		opt = JOptionPane.showOptionDialog(null, Settings.getInstance().lang.getProperty("choose_opt"), Settings.getInstance().lang.getProperty("crud_menu"), 0, JOptionPane.QUESTION_MESSAGE, null,
 				options, options[0]);
 		return opt;
 	}
@@ -107,10 +107,10 @@ public class Functions_user {
 		int opt = 0;
 		
 		if(user instanceof Normal){
-			String optionsNormal[] = { Settings.lang.getProperty("name"), Settings.lang.getProperty("address"),Settings.lang.getProperty("birth_date"),
-					Settings.lang.getProperty("sex"), Settings.lang.getProperty("interests"),Settings.lang.getProperty("navegator"),
-					Settings.lang.getProperty("n_comments"),Settings.lang.getProperty("all") };
-			opt = JOptionPane.showOptionDialog(null, Settings.lang.getProperty("choose_opt"),Settings.lang.getProperty("update_normal"), 0, JOptionPane.QUESTION_MESSAGE, null,
+			String optionsNormal[] = { Settings.getInstance().lang.getProperty("name"), Settings.getInstance().lang.getProperty("address"),Settings.getInstance().lang.getProperty("birth_date"),
+					Settings.getInstance().lang.getProperty("sex"), Settings.getInstance().lang.getProperty("interests"),Settings.getInstance().lang.getProperty("navegator"),
+					Settings.getInstance().lang.getProperty("n_comments"),Settings.getInstance().lang.getProperty("all") };
+			opt = JOptionPane.showOptionDialog(null, Settings.getInstance().lang.getProperty("choose_opt"),Settings.getInstance().lang.getProperty("update_normal"), 0, JOptionPane.QUESTION_MESSAGE, null,
 					optionsNormal, optionsNormal[0]);
 			
 			switch (opt) {
@@ -155,10 +155,10 @@ public class Functions_user {
 				}
 			}
 			if(user instanceof Cliente){
-				String optionsCliente[] = {Settings.lang.getProperty("name"), Settings.lang.getProperty("address"),Settings.lang.getProperty("birth_date"),
-						Settings.lang.getProperty("sex"),Settings.lang.getProperty("n_account"),Settings.lang.getProperty("dni"),
-						Settings.lang.getProperty("n_purchases"),Settings.lang.getProperty("all") };
-				opt = JOptionPane.showOptionDialog(null,Settings.lang.getProperty("choose_opt"),Settings.lang.getProperty("update_client"), 0, JOptionPane.QUESTION_MESSAGE, null,
+				String optionsCliente[] = {Settings.getInstance().lang.getProperty("name"), Settings.getInstance().lang.getProperty("address"),Settings.getInstance().lang.getProperty("birth_date"),
+						Settings.getInstance().lang.getProperty("sex"),Settings.getInstance().lang.getProperty("n_account"),Settings.getInstance().lang.getProperty("dni"),
+						Settings.getInstance().lang.getProperty("n_purchases"),Settings.getInstance().lang.getProperty("all") };
+				opt = JOptionPane.showOptionDialog(null,Settings.getInstance().lang.getProperty("choose_opt"),Settings.getInstance().lang.getProperty("update_client"), 0, JOptionPane.QUESTION_MESSAGE, null,
 						optionsCliente, optionsCliente[0]);
 
 				switch (opt) {
@@ -202,10 +202,10 @@ public class Functions_user {
 					}
 				}
 				if(user instanceof Admin){
-					String optionsAdmin[] = { Settings.lang.getProperty("name"), Settings.lang.getProperty("address"),Settings.lang.getProperty("birth_date"),
-							Settings.lang.getProperty("sex"),Settings.lang.getProperty("job"),Settings.lang.getProperty("contract_date"),
-							Settings.lang.getProperty("all") };
-					opt = JOptionPane.showOptionDialog(null,Settings.lang.getProperty("choose_opt"),Settings.lang.getProperty("update_admin"), 0, JOptionPane.QUESTION_MESSAGE, null,
+					String optionsAdmin[] = { Settings.getInstance().lang.getProperty("name"), Settings.getInstance().lang.getProperty("address"),Settings.getInstance().lang.getProperty("birth_date"),
+							Settings.getInstance().lang.getProperty("sex"),Settings.getInstance().lang.getProperty("job"),Settings.getInstance().lang.getProperty("contract_date"),
+							Settings.getInstance().lang.getProperty("all") };
+					opt = JOptionPane.showOptionDialog(null,Settings.getInstance().lang.getProperty("choose_opt"),Settings.getInstance().lang.getProperty("update_admin"), 0, JOptionPane.QUESTION_MESSAGE, null,
 							optionsAdmin, optionsAdmin[0]);
 					
 					switch (opt) {

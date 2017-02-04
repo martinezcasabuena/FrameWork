@@ -66,17 +66,17 @@ public class Normal extends User {
 	
 	public String toString(){
 		String cad="";
-		cad=cad+(Settings.lang.getProperty("name_is")+this.getNom()+"\n");
-		cad=cad+(Settings.lang.getProperty("address_is")+this.getAdreca()+"\n");
-		cad=cad+(Settings.lang.getProperty("sex_is")+this.getSexe()+"\n");
-		cad=cad+(Settings.lang.getProperty("birthDate_is")+this.getFechaNac().toStringFecha()+"\n");
-		cad=cad+(Settings.lang.getProperty("age_is")+this.getEdad()+"\n");
-		cad=cad+(Settings.lang.getProperty("dni_is")+this.getDni()+"\n");
-		cad=cad+(Settings.lang.getProperty("interests_is")+this.getIntereses()+"\n");
-		cad=cad+(Settings.lang.getProperty("navegator_is")+this.getNavegador()+"\n");
-		cad=cad+(Settings.lang.getProperty("ncomments_is")+this.getComments()+"\n");
-		cad=cad+(Settings.lang.getProperty("karma_is") +this.getKarma()+"\n");
-		cad=cad+(Settings.lang.getProperty("points_is")+this.getPoints()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("name_is")+this.getNom()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("address_is")+this.getAdreca()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("sex_is")+this.getSexe()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("birthDate_is")+this.getFechaNac().toStringFecha()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("age_is")+this.getEdad()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("dni_is")+this.getDni()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("interests_is")+this.getIntereses()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("navegator_is")+this.getNavegador()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("ncomments_is")+this.getComments()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("karma_is") +this.getKarma()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("points_is")+this.getPoints()+"\n");
 		return cad;
 	}
 }

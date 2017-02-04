@@ -23,8 +23,8 @@ public class Functions_date_user {
 		int edad = 0;
 		do {
 			do {
-				fechaNac = Functions_data_user.askDateNac(Settings.getFechaForm()); //Pedimos feha nacimiento
-				fnac = new Fecha(fechaNac,Settings.getFechaForm());
+				fechaNac = Functions_data_user.askDateNac(Settings.getInstance().getFechaForm()); //Pedimos feha nacimiento
+				fnac = new Fecha(fechaNac,Settings.getInstance().getFechaForm());
 				result1 = fnac.ValidaFecha(); //Validamos la fecha
 				if(result1==false){
 					JOptionPane.showMessageDialog(null, "No has introducido una fecha valida");

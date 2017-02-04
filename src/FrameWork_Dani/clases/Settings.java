@@ -1,17 +1,39 @@
 package FrameWork_Dani.clases;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.modulos.user.clases.Admin;
+import FrameWork_Dani.modulos.user.clases.Cliente;
+import FrameWork_Dani.modulos.user.clases.Normal;
+import FrameWork_Dani.modulos.user.clases.Singleton;
+import FrameWork_Dani.utils.Format;
+import FrameWork_Dani.utils.Open_Save_Settings.Open_Settings;
+import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
 
-public class Settings {
+@XStreamAlias("Settings")
+public class Settings implements Serializable {
 	
+	@XStreamAlias("currency")
 	public static String currency;
+	@XStreamAlias("decimal")
 	public static int decimal;
+	@XStreamAlias("fechaForm")
 	public static String fechaForm;
+	@XStreamAlias("language")
 	public static String language;
-	public static Language lang =null;
+	@XStreamAlias("saveFormat")
 	public static String saveFormat;
+	@XStreamAlias("saveMode")
 	public static String saveMode;
-
+	@XStreamAlias("instance")
+	public static Settings instance;
+	public Language lang =null;
 	
 	public Settings(){
 		currency="€";
@@ -20,55 +42,69 @@ public class Settings {
 		language="English";
 		lang =new Language();
 		saveFormat="TXT";
-		saveMode="AUTO";
-		
+	}
+	
+	public static Settings getInstance () {
+		if (instance == null){
+			instance = new Settings ();
+			//Open_Settings.OpenJsonSettings();
+			
+			//Language.getInstance();
+
+			Singleton.userNormal=new ArrayList <Normal> ();
+			Singleton.userCliente = new ArrayList <Cliente> ();
+			Singleton.userAdmin = new ArrayList <Admin> ();
+			
+			//Functions_open_auto.open();
+		}
+		return instance;
 	}
 
-	public static String getCurrency() {
+	public String getCurrency() {
 		return currency;
 	}
 
-	public static void setCurrency(String ValueCurrency) {
+	public void setCurrency(String ValueCurrency) {
 		currency = ValueCurrency;
 	}
 
-	public static int getDecimal() {
+	public int getDecimal() {
 		return decimal;
 	}
 
-	public static void setDecimal(int Valuedecimal) {
+	public void setDecimal(int Valuedecimal) {
 		decimal = Valuedecimal;
 	}
 
-	public static String getFechaForm() {
+	public String getFechaForm() {
 		return fechaForm;
 	}
 
-	public static void setFechaForm(String ValuefechaForm) {
+	public void setFechaForm(String ValuefechaForm) {
 		fechaForm = ValuefechaForm;
 	}
 	
-	public static void setLanguage(String ValueLanguage){
+	public void setLanguage(String ValueLanguage){
 		language=ValueLanguage;
 	}
 	
-	public static String getLanguage(){
+	public String getLanguage(){
 		return language;
 	}
 	
-	public static String getSaveFormat() {
+	public String getSaveFormat() {
 		return saveFormat;
 	}
 
-	public static void setSaveFormat(String ValueSaveFormat) {
+	public void setSaveFormat(String ValueSaveFormat) {
 		saveFormat = ValueSaveFormat;
 	}
 	
-	public static String getSaveMode() {
+	public String getSaveMode() {
 		return saveMode;
 	}
 
-	public static void setSaveMode(String ValueSaveMode) {
+	public void setSaveMode(String ValueSaveMode) {
 		saveMode = ValueSaveMode;
 	}
 	
