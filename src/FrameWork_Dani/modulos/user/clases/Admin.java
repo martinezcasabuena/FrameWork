@@ -60,16 +60,16 @@ public class Admin extends User{
 	
 	public String toString(){
 		String cad="";
-		cad=cad+(Language.getInstance().getProperty("name_is")+this.getNom()+"\n");
-		cad=cad+(Language.getInstance().getProperty("address_is")+this.getAdreca()+"\n");
-		cad=cad+(Language.getInstance().getProperty("sex_is")+this.getSexe()+"\n");
-		cad=cad+(Language.getInstance().getProperty("birthDate_is")+this.getFechaNac().toStringFecha()+"\n");
-		cad=cad+(Language.getInstance().getProperty("age_is")+this.getEdad()+"\n");
-		cad=cad+(Language.getInstance().getProperty("dni_is")+this.getDni()+"\n");
-		cad=cad+(Language.getInstance().getProperty("recruitmentDate_is")+this.getFechaCont().toStringFecha()+"\n");
-		cad=cad+(Language.getInstance().getProperty("seniority_is")+this.getAntiguedad()+"\n");
-		cad=cad+(Language.getInstance().getProperty("occupation_is")+this.getTrabajo()+"\n");
-		cad=cad+(Language.getInstance().getProperty("salary_is")+this.getSueldo()+Settings.getInstance().getCurrency()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("name_is")+this.getNom()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("address_is")+this.getAdreca()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("sex_is")+this.getSexe()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("birthDate_is")+this.getFechaNac().toStringFecha()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("age_is")+this.getEdad()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("dni_is")+this.getDni()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("recruitmentDate_is")+this.getFechaCont().toStringFecha()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("seniority_is")+this.getAntiguedad()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("occupation_is")+this.getTrabajo()+"\n");
+		cad=cad+(Settings.getInstance().lang.getProperty("salary_is")+this.getSueldo()+Settings.getInstance().getCurrency()+"\n");
 		return cad;
 	}
 

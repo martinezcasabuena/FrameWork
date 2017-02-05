@@ -20,42 +20,46 @@ import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
 public class Settings implements Serializable {
 	
 	@XStreamAlias("currency")
-	public String currency;
+	public static String currency;
 	@XStreamAlias("decimal")
-	public int decimal;
+	public static int decimal;
 	@XStreamAlias("fechaForm")
-	public String fechaForm;
+	public static String fechaForm;
 	@XStreamAlias("language")
-	public String language;
+	public static String language;
 	@XStreamAlias("saveFormat")
-	public String saveFormat;
+	public static String saveFormat;
+	@XStreamAlias("saveMode")
+	public static String saveMode;
 	@XStreamAlias("instance")
 	public static Settings instance;
-	//public Language lang =null;
+	public Language lang =null;
 	
 	public Settings(){
 		currency="€";
 		decimal=1;
-		fechaForm="dd/mm/yyyy";
+		fechaForm="dd-mm-yyyy";
 		language="English";
-		//lang =new Language();
+		lang =new Language();
 		saveFormat="TXT";
 	}
 	
 	public static Settings getInstance () {
 		if (instance == null){
 			instance = new Settings ();
-			Open_Settings.OpenJsonSettings();
-
+			//Open_Settings.OpenJsonSettings();
+			
 			Language.getInstance();
 
 			Singleton.userNormal=new ArrayList <Normal> ();
 			Singleton.userCliente = new ArrayList <Cliente> ();
-			Singleton.userAdmin = new ArrayList <Admin> ();			
+			Singleton.userAdmin = new ArrayList <Admin> ();
+			
+			//Functions_open_auto.open();
 		}
-
 		return instance;
 	}
+
 	public String getCurrency() {
 		return currency;
 	}
@@ -95,5 +99,14 @@ public class Settings implements Serializable {
 	public void setSaveFormat(String ValueSaveFormat) {
 		saveFormat = ValueSaveFormat;
 	}
+	
+	public String getSaveMode() {
+		return saveMode;
+	}
+
+	public void setSaveMode(String ValueSaveMode) {
+		saveMode = ValueSaveMode;
+	}
+	
 
 }

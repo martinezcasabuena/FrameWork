@@ -18,7 +18,7 @@ public class Functions_data_user {
 		String cad;
 		int age;
 		do{
-			age=Functions.askInt(Language.getInstance().getProperty("ask_age"), "edad");
+			age=Functions.askInt(Settings.getInstance().lang.getProperty("ask_age"), "edad");
 			cad=Integer.toString(age);
 			correct=Validate.validateAge(cad);
 		}while(correct==false);
@@ -29,7 +29,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_name")), "Name");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_name")), "Name");
 			correct=Validate.validateName(cad);
 		}while(correct==false);
 		return cad;
@@ -39,7 +39,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_dni")), "DNI");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_dni")), "DNI");
 			correct=Validate.validateDni(cad);
 		}while(correct==false);
 		return cad;
@@ -49,7 +49,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_address")), "Address");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_address")), "Address");
 			correct=Validate.validateLetterNum(cad);
 		}while(correct==false);
 		return cad;
@@ -59,7 +59,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_sex")+" H-h, M-m"), "Sex");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_sex")+" H-h, M-m"), "Sex");
 			correct=Validate.validateSex(cad);
 		}while(correct==false);
 		return cad;
@@ -69,7 +69,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_navegator")), "Navegator");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_navegator")), "Navegator");
 			correct=Validate.validateLetterNum(cad);
 		}while(correct==false);
 		return cad;
@@ -79,7 +79,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_interests")), "Intereses");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_interests")), "Intereses");
 			correct=Validate.validateLetterNum(cad);
 		}while(correct==false);
 		return cad;
@@ -89,7 +89,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_naccount")), "Account number");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_naccount")), "Account number");
 			correct=Validate.validateAccountNumber(cad);
 		}while(correct==false);
 		return cad;
@@ -99,7 +99,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_privileges")), "Privileges");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_privileges")), "Privileges");
 			correct=Validate.validatePrivileges(cad);
 		}while(correct==false);
 		return cad;
@@ -109,7 +109,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString(Language.getInstance().getProperty("ask_dateNac")+"  "+fechaForm,"Date");
+			cad=Functions.askString(Settings.getInstance().lang.getProperty("ask_dateNac")+"  "+fechaForm,"Date");
 			correct=Validate.validateDate(cad,fechaForm);
 			if(correct==false){
 				JOptionPane.showMessageDialog(null, "No has introducido un formato de fecha valida.\nUtiliza el formato "+fechaForm);
@@ -122,7 +122,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString(Language.getInstance().getProperty("ask_dateCont")+"  "+fechaForm,"Date");
+			cad=Functions.askString(Settings.getInstance().lang.getProperty("ask_dateCont")+"  "+fechaForm,"Date");
 			correct=Validate.validateDate(cad,fechaForm);
 			if(correct==false){
 				JOptionPane.showMessageDialog(null, "No has introducido un formato de fecha valida.\nUtiliza el formato "+fechaForm);
@@ -135,7 +135,7 @@ public class Functions_data_user {
 		boolean correct=false;
 		String cad="";
 		do{
-			cad=Functions.askString((Language.getInstance().getProperty("ask_job")), "Occupation");
+			cad=Functions.askString((Settings.getInstance().lang.getProperty("ask_job")), "Occupation");
 			correct=Validate.validateName(cad);
 		}while(correct==false);
 		return cad;
@@ -146,7 +146,7 @@ public class Functions_data_user {
 		String cad="";
 		int numComments=0;
 		do{
-			cad=Functions.askString(Language.getInstance().getProperty("ask_ncomments"), "Comments");
+			cad=Functions.askString(Settings.getInstance().lang.getProperty("ask_ncomments"), "Comments");
 			correct=Validate.validateComments(cad);
 		}while(correct==false);
 		numComments=Integer.parseInt(cad);
@@ -158,7 +158,7 @@ public class Functions_data_user {
 		String cad="";
 		int numCompras=0;
 		do{
-			cad=Functions.askString(Language.getInstance().getProperty("ask_npurchases"), "Compras");
+			cad=Functions.askString(Settings.getInstance().lang.getProperty("ask_npurchases"), "Compras");
 			correct=Validate.validateCompras(cad);
 		}while(correct==false);
 		numCompras=Integer.parseInt(cad);

@@ -3,7 +3,6 @@ package FrameWork_Dani.modulos.user.utils.CRUD;
 import javax.swing.JOptionPane;
 
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
@@ -16,10 +15,10 @@ public class Functions_read {
 	
 	public static void readNormal (){
 		int menu = 0, location = -1;
-		String options[] = { Language.getInstance().getProperty("read_all"),Language.getInstance().getProperty("read_user")};
+		String options[] = { Settings.getInstance().lang.getProperty("read_all"),Settings.getInstance().lang.getProperty("read_user")};
 		
 		if(Singleton.userNormal.isEmpty()){
-			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			menu=Functions.MenuP(options);
 			switch (menu){
@@ -38,7 +37,7 @@ public class Functions_read {
 						normal = Singleton.userNormal.get(location);
 						JOptionPane.showMessageDialog(null, normal.toString());
 					}else {
-						JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 					}
 					break;
 			}
@@ -50,7 +49,7 @@ public class Functions_read {
 		String options[] = { "Leer todos", "Leer un usuario" };
 		
 		if(Singleton.userCliente.isEmpty()){
-			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			menu=Functions.MenuP(options);
 			switch (menu){
@@ -69,7 +68,7 @@ public class Functions_read {
 						cliente = Singleton.userCliente.get(location);
 						JOptionPane.showMessageDialog(null, cliente.toString());
 					}else {
-						JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 					}
 					break;
 			}
@@ -81,7 +80,7 @@ public class Functions_read {
 		String options[] = { "Leer todos", "Leer un usuario" };
 		
 		if(Singleton.userAdmin.isEmpty()){
-			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			menu=Functions.MenuP(options);
 			switch (menu){
@@ -100,7 +99,7 @@ public class Functions_read {
 						admin = Singleton.userAdmin.get(location);
 						JOptionPane.showMessageDialog(null, admin.toString());
 					}else {
-						JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
 					}
 					break;
 			}

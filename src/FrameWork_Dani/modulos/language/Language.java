@@ -7,7 +7,7 @@ import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.utils.Functions;
 
 public class Language extends Properties {
-	private String language=Settings.getInstance().getLanguage();
+	private String language=Settings.language;
 	private static Language instance;
 	
 	public Language (){
@@ -22,6 +22,7 @@ public class Language extends Properties {
 		    	getProperties("VA.properties");
 		    	break;
 		    }
+
 	}
 	
 	public static Language getInstance () {
@@ -93,6 +94,12 @@ public class Language extends Properties {
             this.load( getClass().getResourceAsStream(language) );
         } catch (IOException ex) {
         }
-    }	
+    }
+
+
+
 	
+	
+	
+
 }
