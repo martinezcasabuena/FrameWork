@@ -1,13 +1,13 @@
 package FrameWork_Dani.utils;
 import java.text.DecimalFormat;
 
-import FrameWork_Dani.Main;
 import FrameWork_Dani.clases.Settings;
 
 public class Format {
 	
 	public static String currency=Settings.getInstance().getCurrency();
 	public static int decimal=Settings.getInstance().getDecimal();
+	public static String saveFormat=Settings.getInstance().getSaveFormat();
 	
 	public static void CurrencyFormat(){
 		String opt="";
@@ -17,17 +17,16 @@ public class Format {
     	switch (opt) {
     	case "€":
     		currency="€";
-    		Settings.getInstance().setCurrency(currency);
     		break;
     	case "$":
     		currency="$";
-    		Settings.getInstance().setCurrency(currency);
     		break;
     	case "£":
     		currency="£";
-    		Settings.getInstance().setCurrency(currency);
     		break;
 		}
+    	
+		Settings.getInstance().setCurrency(currency);
 	}
 	
 	public static void DecimalFormat(){
@@ -38,17 +37,16 @@ public class Format {
 		switch(opt){
 		case "1":
 			decimal=1;
-			Settings.getInstance().setDecimal(decimal);
 			break;
 		case "2":
 			decimal=2;
-			Settings.getInstance().setDecimal(decimal);
 			break;
 		case "3":
 			decimal=3;
-			Settings.getInstance().setDecimal(decimal);
 			break;
 		}
+		
+		Settings.getInstance().setDecimal(decimal);
 	}
 	
 	public static String Decimal(float sueldo){
@@ -64,9 +62,7 @@ public class Format {
 			decimalFormat=new DecimalFormat(".000");
 			break;
 		}
-		
 		return decimalFormat.format(sueldo);
-		
 	}
 	
 	public static void SaveFormat(){
@@ -76,16 +72,16 @@ public class Format {
     	
     	switch (opt) {
 		case "TXT":
-			Settings.getInstance().setSaveFormat("TXT");
+			saveFormat="TXT";
 			break;
 		case "XML":
-			Settings.getInstance().setSaveFormat("XML");
+			saveFormat="XML";
 			break;
 		case "JSON":
-			Settings.getInstance().setSaveFormat("JSON");
+			saveFormat="JSON";
 			break;
 		}
-		
+		Settings.getInstance().setSaveFormat(saveFormat);
 	}
 
 }

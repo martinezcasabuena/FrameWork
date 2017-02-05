@@ -3,6 +3,7 @@ package FrameWork_Dani.modulos.user.utils.CRUD;
 import javax.swing.JOptionPane;
 
 import FrameWork_Dani.clases.Settings;
+import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
@@ -17,7 +18,7 @@ public class Functions_update {
 		int location1 = -1;
 		
 		if(Singleton.userNormal.isEmpty()){
-			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location1 = -1;
 			Normal normal= (Normal) Functions_user.CreateUser_dni(0);
@@ -27,7 +28,7 @@ public class Functions_update {
 				Functions_user.UpdateUser_Generic(normal, Settings.getInstance().fechaForm);
 				Singleton.userNormal.set(location1, normal);
 			}else {
-				JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}
@@ -36,7 +37,7 @@ public class Functions_update {
 		int location1 = -1;
 		
 		if(Singleton.userCliente.isEmpty()){
-			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location1 = -1;
 			Cliente client= (Cliente) Functions_user.CreateUser_dni(1);
@@ -46,7 +47,7 @@ public class Functions_update {
 				Functions_user.UpdateUser_Generic(client, Settings.getInstance().fechaForm);
 				Singleton.userCliente.set(location1, client);
 			}else {
-				JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}
@@ -56,7 +57,7 @@ public class Functions_update {
 		int location1 = -1;
 		
 		if(Singleton.userAdmin.isEmpty()){
-			JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location1 = -1;
 			Admin admin= (Admin) Functions_user.CreateUser_dni(2);
@@ -66,7 +67,7 @@ public class Functions_update {
 				Functions_user.UpdateUser_Generic(admin, Settings.getInstance().fechaForm);
 				Singleton.userAdmin.set(location1, admin);
 			}else {
-				JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("no_user"), Settings.getInstance().lang.getProperty("error"), JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}

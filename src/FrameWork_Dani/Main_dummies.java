@@ -40,10 +40,10 @@ public class Main_dummies {
 		Singleton.userAdmin = new ArrayList <Admin> ();
 		
 		do {
-			String options[] = { Settings.getInstance().lang.getProperty("normal"), Settings.getInstance().lang.getProperty("client"),Settings.getInstance().lang.getProperty("admin"),
-					 Settings.getInstance().lang.getProperty("options"),Settings.getInstance().lang.getProperty("exit") };
-			String setting[] = {Settings.getInstance().lang.getProperty("date_format"),Settings.getInstance().lang.getProperty("currency"),Settings.getInstance().lang.getProperty("decimal"),
-					Settings.getInstance().lang.getProperty("language"),Settings.getInstance().lang.getProperty("noDummies"),Settings.getInstance().lang.getProperty("back")};
+			String options[] = { ("normal"), ("client"),("admin"),
+					 ("options"),("exit") };
+			String setting[] = {("date_format"),("currency"),("decimal"),
+					("language"),("noDummies"),("back")};
 			
 			opt = Functions.MenuP(options);
 			if (opt == -1) {
@@ -164,10 +164,12 @@ public class Main_dummies {
 								break;
 							case 3:
 								languageOpt=Language.LanguageOptions(); //Guardamos el idioma en una variable dentro de la clase Language
-								Settings.getInstance().lang.setLanguage(languageOpt);
+								//Settings.getInstance().lang.setLanguage(languageOpt);
+								Language.getInstance().setLanguage(languageOpt);
 								break;
 							case 4:
-								JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("SwitchDummiesLeave"));								Main.main(args);
+								JOptionPane.showMessageDialog(null,("SwitchDummiesLeave"));								
+								Main.main(args);
 								break;
 
 							}

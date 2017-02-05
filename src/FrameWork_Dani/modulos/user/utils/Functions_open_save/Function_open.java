@@ -59,7 +59,6 @@ public class Function_open {
 	}
 
 	public static void OpenGenericAuto(int opt){
-	
 		String saveFormat=Settings.getInstance().getSaveFormat(); //Obtengo el formato de guardado		
 		switch (opt) {//Switch para saber en que usuario ha entrado
 		case 0: //Entra en el usuario Normal
@@ -119,9 +118,9 @@ public class Function_open {
 		Functions_open_users.AutoOpenXmlNormal();
 		Functions_open_users.AutoOpenXmlClient();
 		Functions_open_users.AutoOpenXmlAdmin();
-		Functions_open_users.OnDemandOpenJsonNormal();
-		Functions_open_users.OnDemandOpenJsonClient();
-		Functions_open_users.OnDemandOpenJsonAdmin();
+		Functions_open_users.AutoOpenJsonNormal();
+		Functions_open_users.AutoOpenJsonClient();
+		Functions_open_users.AutoOpenJsonAdmin();
 	}
 
 }

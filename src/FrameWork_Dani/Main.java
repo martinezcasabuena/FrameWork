@@ -1,7 +1,5 @@
 package FrameWork_Dani;
 
-import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
 
 import FrameWork_Dani.clases.Fecha;
@@ -10,13 +8,6 @@ import FrameWork_Dani.utils.Format;
 import FrameWork_Dani.utils.Functions;
 import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
 import FrameWork_Dani.modulos.language.Language;
-import FrameWork_Dani.modulos.user.clases.Normal;
-import FrameWork_Dani.modulos.user.clases.Cliente;
-import FrameWork_Dani.modulos.user.clases.Admin;
-import FrameWork_Dani.modulos.user.clases.Singleton;
-import FrameWork_Dani.modulos.user.clases.User;
-import FrameWork_Dani.modulos.user.utils.Functions_data_user;
-import FrameWork_Dani.modulos.user.utils.Functions_find;
 import FrameWork_Dani.modulos.user.utils.Functions_user;
 import FrameWork_Dani.modulos.user.utils.CRUD.Functions_create;
 import FrameWork_Dani.modulos.user.utils.CRUD.Functions_delete;
@@ -25,7 +16,6 @@ import FrameWork_Dani.modulos.user.utils.CRUD.Functions_read;
 import FrameWork_Dani.modulos.user.utils.CRUD.Functions_update;
 import FrameWork_Dani.modulos.user.utils.Functions_open_save.Function_open;
 import FrameWork_Dani.modulos.user.utils.Functions_open_save.Function_save;
-import FrameWork_Dani.modulos.user.utils.Functions_open_save.Functions_save_users;
 
 public class Main {
 
@@ -33,24 +23,15 @@ public class Main {
 	
 	public static void main(String[] args) {
 		int opt = 0, opt1 = 0,opt2 = 0;
-		User user = null;
-		User cliente = null;
-		User admin = null;
-		User normal = null;
+
 		Settings.getInstance();
 		
-		/*
-		Singleton.userNormal=new ArrayList <Normal> ();
-		Singleton.userCliente = new ArrayList <Cliente> ();
-		Singleton.userAdmin = new ArrayList <Admin> ();
-		*/
-		
 		do {
-			String options[] = { Settings.getInstance().lang.getProperty("normal"), Settings.getInstance().lang.getProperty("client"),Settings.getInstance().lang.getProperty("admin"),
-					 Settings.getInstance().lang.getProperty("options"),Settings.getInstance().lang.getProperty("exit") };
-			String setting[] = {Settings.getInstance().lang.getProperty("date_format"),Settings.getInstance().lang.getProperty("currency"),Settings.getInstance().lang.getProperty("decimal"),
-					Settings.getInstance().lang.getProperty("language"),Settings.getInstance().lang.getProperty("dummies"),Settings.getInstance().lang.getProperty("save_format"),
-					Settings.getInstance().lang.getProperty("back")};
+			String options[] = { Language.getInstance().getProperty("normal"), Language.getInstance().getProperty("client"),Language.getInstance().getProperty("admin"),
+					 Language.getInstance().getProperty("options"),Language.getInstance().getProperty("exit") };
+			String setting[] = {Language.getInstance().getProperty("date_format"),Language.getInstance().getProperty("currency"),Language.getInstance().getProperty("decimal"),
+					Language.getInstance().getProperty("language"),Language.getInstance().getProperty("dummies"),Language.getInstance().getProperty("save_format"),
+					Language.getInstance().getProperty("back")};
 					
 			opt = Functions.MenuP(options);
 			if (opt == -1) {
@@ -190,10 +171,11 @@ public class Main {
 								break;
 							case 3:
 								String languageOpt=Language.LanguageOptions(); //Guardamos el idioma en una variable dentro de la clase Language
-								Settings.getInstance().lang.setLanguage(languageOpt);
+								//Settings.getInstance().lang.setLanguage(languageOpt);
+								Language.getInstance().setLanguage(languageOpt);
 								break;
 							case 4:
-								JOptionPane.showMessageDialog(null,Settings.getInstance().lang.getProperty("SwitchDummiesEnter"));
+								JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("SwitchDummiesEnter"));
 								Main_dummies.main(args);
 								break;
 							case 5:
@@ -209,7 +191,7 @@ public class Main {
 					break;
 					
 				case 4:
-					Function_save.AutoSave();
+					//Function_save.AutoSave();
 					System.exit(0);
 				}
 

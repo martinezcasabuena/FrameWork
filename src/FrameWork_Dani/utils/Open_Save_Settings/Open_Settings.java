@@ -32,11 +32,11 @@ public class Open_Settings {
 	        
 	        Gson json = new Gson();
 	        settings = json.fromJson(root, Settings.class);
-	        Settings.instance.setCurrency(settings.getCurrency());
-	        Settings.instance.setDecimal(settings.getDecimal());
-	        Settings.instance.setFechaForm(settings.getFechaForm());
-	        Settings.instance.setLanguage(settings.getLanguage());
-	        Settings.instance.setSaveFormat(settings.getSaveFormat());
+	        Settings.getInstance().setCurrency(settings.getCurrency());
+	        Settings.getInstance().setDecimal(settings.getDecimal());
+	        Settings.getInstance().setFechaForm(settings.getFechaForm());
+	        Settings.getInstance().setLanguage(settings.getLanguage());
+	        Settings.getInstance().setSaveFormat(settings.getSaveFormat());
 	        //Settings.getInstance().setTheme(config.getTheme());
 	        
         } catch (Exception e) {
