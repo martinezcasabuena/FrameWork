@@ -165,7 +165,6 @@ public class Functions_save_users {
 		          FileWriter fileXml = new FileWriter(PATH);
 	              fileXml.write(json.toString());
 	              fileXml.close(); 
-	              //JOptionPane.showMessageDialog(null, "Archivo JSON guardado con exito", "Archivo JSON", JOptionPane.INFORMATION_MESSAGE);
 	        } catch (Exception e) {
 	        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
 	        }

@@ -283,6 +283,7 @@ public class Fecha implements Serializable{
 				fechaForm = "yyyy-mm-dd";
 				break;
 			}
+    		Settings.getInstance().setFechaForm(fechaForm);
 	    	return fechaForm;
 	    }
 }
