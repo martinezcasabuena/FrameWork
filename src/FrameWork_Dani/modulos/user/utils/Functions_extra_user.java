@@ -29,15 +29,12 @@ public class Functions_extra_user {
 		case 0:
 			karma="Se requiere un minimo de puntos para obtener karma";
 			break;
-			
 		case 30:
 			karma="Bajo";		
 			break;
-			
 		case 70:
 			karma="Medio";
 			break;
-			
 		case 100:
 			karma="Alto";
 			break;
@@ -46,7 +43,7 @@ public class Functions_extra_user {
 		return karma;
 	}
 	
-	public static String CalcSueldo(int antig,String currency,int decimal){
+	public static String CalcSueldo(int antig,String currency){
 		float sueldo=0;
 		String cad="";
 		
@@ -79,7 +76,6 @@ public class Functions_extra_user {
 		
 		//Obtenemos el sueldo a partir de los decimales
 		cad=Format.Decimal(sueldo);
-
 		return cad;
 	}
 	
@@ -101,5 +97,4 @@ public class Functions_extra_user {
 		
 		return descuento;
 	}
-	
 }

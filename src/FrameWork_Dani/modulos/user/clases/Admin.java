@@ -50,7 +50,7 @@ public class Admin extends User{
 	}
 	
 	public String getSueldo(){
-		sueldo=Functions_extra_user.CalcSueldo(this.antig,Settings.getInstance().getCurrency(),Settings.getInstance().getDecimal());
+		sueldo=Functions_extra_user.CalcSueldo(this.antig,Settings.getInstance().getCurrency());
 		return this.sueldo;
 	}
 	

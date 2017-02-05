@@ -38,7 +38,7 @@ public class Settings implements Serializable {
 	public Settings(){
 		currency="€";
 		decimal=1;
-		fechaForm="dd/mm/yyyy";
+		fechaForm="dd-mm-yyyy";
 		language="English";
 		lang =new Language();
 		saveFormat="TXT";
@@ -49,7 +49,7 @@ public class Settings implements Serializable {
 			instance = new Settings ();
 			//Open_Settings.OpenJsonSettings();
 			
-			//Language.getInstance();
+			Language.getInstance();
 
 			Singleton.userNormal=new ArrayList <Normal> ();
 			Singleton.userCliente = new ArrayList <Cliente> ();

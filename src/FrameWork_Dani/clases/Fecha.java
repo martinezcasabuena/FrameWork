@@ -19,8 +19,8 @@ public class Fecha implements Serializable{
 	private int day;
 	private int month;
 	private int year;
-	public static String fechaForm="dd/mm/yyyy"; //Por defecto el formato sera dd/mm/yyyy
-
+	public static String fechaForm=Settings.getInstance().getFechaForm(); 
+	//Por defecto el formato sera el que se indice en la clase Settings
 
 	private SimpleDateFormat formato=new SimpleDateFormat(fechaForm);
 	
@@ -78,17 +78,8 @@ public class Fecha implements Serializable{
 			fechaform=year+"-"+month+"-"+day;
 			this.fecha=fechaform;
 			break;
-	}	
+		}	
 		
-	/*	
-		SplitArray=introduceFecha.split("/");
-		this.day=Integer.parseInt(SplitArray[0]);
-		this.month=Integer.parseInt(SplitArray[1]);
-		this.year=Integer.parseInt(SplitArray[2]);
-		
-		fechaform=day+"/"+month+"/"+year;
-		this.fecha=fechaform;
-		*/
 	}
 	
 	public Calendar fromStringToCalendar(String fecha){
@@ -184,14 +175,7 @@ public class Fecha implements Serializable{
 			int mes;
 			int anyo;
 			boolean valido = false;
-			String[] fechaArray=null;
 			
-			//fechaArray=this.fecha.split("/");
-			/*
-			dia=Integer.parseInt(fechaArray[0]);
-			mes=Integer.parseInt(fechaArray[1]);
-			anyo=Integer.parseInt(fechaArray[2]);
-		*/	
 			dia=this.day;
 			mes=this.month;
 			anyo=this.year;

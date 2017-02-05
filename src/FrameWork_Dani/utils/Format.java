@@ -6,8 +6,8 @@ import FrameWork_Dani.clases.Settings;
 
 public class Format {
 	
-	public static String currency="€";
-	public static int decimal=1;
+	public static String currency=Settings.getInstance().getCurrency();
+	public static int decimal=Settings.getInstance().getDecimal();
 	
 	public static void CurrencyFormat(){
 		String opt="";
@@ -53,7 +53,6 @@ public class Format {
 	
 	public static String Decimal(float sueldo){
 		DecimalFormat decimalFormat = new DecimalFormat(".0");
-		
 		switch(decimal){
 		case 1:
 			decimalFormat=new DecimalFormat(".0");

@@ -3,14 +3,25 @@ package FrameWork_Dani.modulos.language;
 import java.io.IOException;
 import java.util.Properties;
 
+import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.utils.Functions;
 
 public class Language extends Properties {
-	private String language="English";
+	private String language=Settings.language;
 	private static Language instance;
 	
 	public Language (){
-	        getProperties("EN.properties");
+		 switch(language){
+		    case "English":
+		        getProperties("EN.properties");
+		        break;
+		    case "Spanish":
+		        getProperties("ES.properties");
+		        break;
+		    case "Valencian":
+		    	getProperties("VA.properties");
+		    	break;
+		    }
 
 	}
 	
@@ -20,7 +31,7 @@ public class Language extends Properties {
 		}
 		return instance;
 	}
-	
+	/*
 	public Language (String language){
 	    switch(language){
 	    case "English":
@@ -34,18 +45,22 @@ public class Language extends Properties {
 	    	break;
 	    }
 	}
+	*/
 	
 	public void setLanguage(String language) {
 		this.language = language;
 		switch(language){
 	    case "English":
 	        getProperties("EN.properties");
+	        Settings.getInstance().setLanguage("English");
 	        break;
 	    case "Spanish":
 	        getProperties("ES.properties");
+	        Settings.getInstance().setLanguage("Spanish");
 	        break;
 	    case "Valencian":
 	    	getProperties("VA.properties");
+	        Settings.getInstance().setLanguage("Valencian");
 	    	break;
 		}
 	}
