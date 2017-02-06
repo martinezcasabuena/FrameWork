@@ -24,6 +24,11 @@ public class Fecha implements Serializable{
 
 	private SimpleDateFormat formato=new SimpleDateFormat(fechaForm);
 	
+	public SimpleDateFormat getFormato(){
+		formato=new SimpleDateFormat(Settings.getInstance().getFechaForm());
+		return formato;
+	}
+	
 	//Getters & Setters
 	public String getFecha(){
 		return fecha;
@@ -85,9 +90,10 @@ public class Fecha implements Serializable{
 	public Calendar fromStringToCalendar(String fecha){
 		Date fechaDate=new Date();
 		Calendar fechaCalendar=new GregorianCalendar();
-		
+		SimpleDateFormat format= new SimpleDateFormat("dd/mm/yyyy");
 		try{
-			fechaDate = formato.parse(fecha);
+			
+			fechaDate = format.parse(fecha);
 			fechaCalendar.setTime(fechaDate);
 			}catch (ParseException e){
 				//JOptionPane.showMessageDialog(null, "No se puede crear la fecha");
@@ -118,7 +124,7 @@ public class Fecha implements Serializable{
 	
 	public int comparaFechasOrder(Fecha fecha2){ //Funcion para comparar las fechas para hacer el Order de los usuarios.
 		Calendar cal1 = this.fromStringToCalendar(fecha); //Fecha nacimiento
-		Calendar cal2 = this.fromStringToCalendar(fecha2.toStringFecha()); //Fecha contratacion
+		Calendar cal2 = this.fromStringToCalendar(fecha2.toString()); //Fecha contratacion
 		
 		  if (cal1.after(cal2)) //Fecha nacimiento despues de fecha contratacion
 			  return 1;
@@ -132,7 +138,7 @@ public class Fecha implements Serializable{
 		int diferencia, any1, anyosistema;
 		Calendar cal1=new GregorianCalendar();
 		
-		cal1=(fromStringToCalendar(fecha));
+		cal1=(fromStringToCalendar(toString()));
 		
 		any1=cal1.get(Calendar.YEAR);
 		anyosistema=this.anyoactual();
@@ -286,20 +292,10 @@ public class Fecha implements Serializable{
     		Settings.getInstance().setFechaForm(fechaForm);
 	    	return fechaForm;
 	    }
+	    
+	    public String toString(){
+	    	String fecha=null;
+	    	fecha=this.day+"/"+this.month+"/"+this.year;
+	    	return fecha;
+	    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
