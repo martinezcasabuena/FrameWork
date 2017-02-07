@@ -1,4 +1,4 @@
-package FrameWork_Dani.modulos.user.utils.CRUD;
+package FrameWork_Dani.modulos.user.utils.CRUD_dummies;
 
 import javax.swing.JOptionPane;
 
@@ -12,7 +12,7 @@ import FrameWork_Dani.modulos.user.utils.Functions_find;
 import FrameWork_Dani.modulos.user.utils.Functions_user;
 import FrameWork_Dani.utils.Functions;
 
-public class Functions_read {
+public class Functions_read_dummies {
 	
 	public static void readNormal (){
 		int menu = 0, location = -1;

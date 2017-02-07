@@ -2,10 +2,7 @@ package FrameWork_Dani.modulos.user.utils;
 
 import javax.swing.JOptionPane;
 
-import FrameWork_Dani.Main;
-import FrameWork_Dani.Main_dummies;
 import FrameWork_Dani.clases.Fecha;
-import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
@@ -14,11 +11,16 @@ import FrameWork_Dani.modulos.user.clases.User;
 
 public class Functions_user_dummies {
 	
+	private static String dni=""; //Guardamos el dni al pedirlo al usuario para no pedirlo 2 veces.
+	
+	// ********** CRUD MENU **********//
+
 	public static int CrudMenu() {
 		int opt = 0;
 		String options[] = { Language.getInstance().getProperty("create") ,Language.getInstance().getProperty("read"),Language.getInstance().getProperty("update"),
-				Language.getInstance().getProperty("delete"), Language.getInstance().getProperty("get"), Language.getInstance().getProperty("exit") };
-		opt = JOptionPane.showOptionDialog(null, Language.getInstance().getProperty("choose_opt"),Language.getInstance().getProperty("crud_menu"), 0, JOptionPane.QUESTION_MESSAGE, null,
+				Language.getInstance().getProperty("delete"), Language.getInstance().getProperty("order"),Language.getInstance().getProperty("save"),
+				Language.getInstance().getProperty("open"),Language.getInstance().getProperty("exit") };
+		opt = JOptionPane.showOptionDialog(null, Language.getInstance().getProperty("choose_opt"), Language.getInstance().getProperty("crud_menu"), 0, JOptionPane.QUESTION_MESSAGE, null,
 				options, options[0]);
 		return opt;
 	}

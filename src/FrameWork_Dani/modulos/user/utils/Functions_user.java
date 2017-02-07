@@ -2,16 +2,12 @@ package FrameWork_Dani.modulos.user.utils;
 
 import javax.swing.JOptionPane;
 
-import FrameWork_Dani.clases.Fecha;
-import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
 import FrameWork_Dani.modulos.user.clases.Singleton;
 import FrameWork_Dani.modulos.user.clases.User;
-import FrameWork_Dani.utils.Functions;
-import FrameWork_Dani.Main;
 
 public class Functions_user {
 

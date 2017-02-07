@@ -31,14 +31,12 @@ public class Settings implements Serializable {
 	public String saveFormat;
 	@XStreamAlias("instance")
 	public static Settings instance;
-	//public Language lang =null;
 	
 	public Settings(){
 		currency="€";
 		decimal=1;
 		fechaForm="dd/mm/yyyy";
 		language="English";
-		//lang =new Language();
 		saveFormat="TXT";
 	}
 	
