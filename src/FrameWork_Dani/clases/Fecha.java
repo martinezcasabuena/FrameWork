@@ -11,6 +11,7 @@ import java.util.GregorianCalendar;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
+import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.utils.Functions;
 
 public class Fecha implements Serializable{
@@ -274,7 +275,7 @@ public class Fecha implements Serializable{
 	    	String opt="";
 	    	String formatDate[] = {"dd/mm/yyyy","dd-mm-yyyy","yyyy/mm/dd","yyyy-mm-dd"};
 	    	
-	    	opt= Functions.ComboMenu(formatDate,"Choose a format for date","Date Settings");
+	    	opt= Functions.ComboMenu(formatDate,Language.getInstance().getProperty("date_message"),Language.getInstance().getProperty("date_format"));
 	    	switch (opt) {
 	    	case "dd/mm/yyyy":
 	    		fechaForm = "dd/mm/yyyy";

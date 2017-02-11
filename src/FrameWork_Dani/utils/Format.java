@@ -2,6 +2,7 @@ package FrameWork_Dani.utils;
 import java.text.DecimalFormat;
 
 import FrameWork_Dani.clases.Settings;
+import FrameWork_Dani.modulos.language.Language;
 
 public class Format {
 	
@@ -13,7 +14,7 @@ public class Format {
 		String opt="";
     	String currencyOpt[] = {"€","$","£"};
     	
-    	opt= Functions.ComboMenu(currencyOpt,"Choose a currency","Currency");
+    	opt= Functions.ComboMenu(currencyOpt,Language.getInstance().getProperty("currency_message"),Language.getInstance().getProperty("currency"));
     	switch (opt) {
     	case "€":
     		currency="€";
@@ -25,7 +26,6 @@ public class Format {
     		currency="£";
     		break;
 		}
-    	
 		Settings.getInstance().setCurrency(currency);
 	}
 	
@@ -33,7 +33,7 @@ public class Format {
 		String opt="";
 		String decimalOpt[]={"1","2","3"};
 		
-		opt=Functions.ComboMenu(decimalOpt, "Chose the number of decimals", "Decimals");
+		opt=Functions.ComboMenu(decimalOpt,Language.getInstance().getProperty("decimal_message"),Language.getInstance().getProperty("decimal"));
 		switch(opt){
 		case "1":
 			decimal=1;
@@ -45,7 +45,6 @@ public class Format {
 			decimal=3;
 			break;
 		}
-		
 		Settings.getInstance().setDecimal(decimal);
 	}
 	
@@ -68,7 +67,7 @@ public class Format {
 	public static void SaveFormat(){
 		String opt="";
     	String saveFormatOpt[] = {"TXT","XML","JSON"};
-    	opt= Functions.ComboMenu(saveFormatOpt,"Choose a format for saving the data","SaveDataFormat");
+    	opt= Functions.ComboMenu(saveFormatOpt,Language.getInstance().getProperty("save_message"),Language.getInstance().getProperty("save_format"));
     	
     	switch (opt) {
 		case "TXT":

@@ -111,7 +111,7 @@ public class Functions_user_dummies {
 				break;
 				
 			case 5:
-				((Normal)user).setNavegador(Functions_data_user.askNavegator());
+				((Normal)user).setNavegador(Functions_data_user.askNavigator());
 				break;
 
 			case 6:
@@ -125,7 +125,7 @@ public class Functions_user_dummies {
 				user.setSexe(Functions_data_user.askSex());
 				user.setDni(Functions_data_user.askDni());
 				((Normal)user).setIntereses(Functions_data_user.askInterests());
-				((Normal)user).setNavegador(Functions_data_user.askNavegator());
+				((Normal)user).setNavegador(Functions_data_user.askNavigator());
 				((Normal)user).setComments(Functions_data_user.askNumComments());
 				break;	
 				}

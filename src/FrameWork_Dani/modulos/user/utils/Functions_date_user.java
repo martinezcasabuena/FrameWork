@@ -27,12 +27,12 @@ public class Functions_date_user {
 				fnac = new Fecha(fechaNac,Settings.getInstance().getFechaForm());
 				result1 = fnac.ValidaFecha(); //Validamos la fecha
 				if(result1==false){
-					JOptionPane.showMessageDialog(null, "No has introducido una fecha valida");
+					JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_error"));
 				}
 			} while (result1 == false);
 			edad = fnac.RestaFechas(); //Calculamos la edad para comprobar que es mayor de edad
 			if (edad < 18) {
-				JOptionPane.showMessageDialog(null, "Tienes que ser mayor de edad");
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_age"));
 				correct = false;
 			} else {
 				correct = true;
@@ -55,7 +55,7 @@ public class Functions_date_user {
 				fcont = new Fecha(fechaCont,fechaForm);
 				result1 = fcont.ValidaFecha(); //Validamos la fecha de contrataci�n
 				if(result1==false){
-					JOptionPane.showMessageDialog(null, "No has introducido una fecha valida");
+					JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_error"));
 				}
 			} while (result1 == false);
 			//fnac=User.fnac; //Obtenemos la fecha de nacimiento de la clase User **FUNCIONA SI fnac esta STATIC en clase USER**
@@ -64,15 +64,15 @@ public class Functions_date_user {
 			switch(compara){
 			case 1: //Fecha superior a la fecha actual
 				correct=false;
-				JOptionPane.showMessageDialog(null, "La fecha de contrataci�n no puede superior a la fecha actual");
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_higher"));
 				break;
 			
-			case 2: //Fecha despues despu�s de la de nacimiento
+			case 2: //Fecha anterior despu�s de la de nacimiento
 				correct=false;
-				JOptionPane.showMessageDialog(null, "La fecha de contrataci�n no puede ser inferior a la de nacimiento");
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_lower"));
 				break;
 				
-			case 3: //Fecha anterior a la de nacimiento (Valida)
+			case 3: //Fecha después a la de nacimiento (Valida)
 				result2=CompruebaFechaContract(fnac, fcont);
 				if(result2==true){
 					correct=true;
@@ -83,7 +83,7 @@ public class Functions_date_user {
 				
 			case 4: //Fecha igual
 				correct=false;
-				JOptionPane.showMessageDialog(null, "La fecha de contrataci�n no puede ser igual a la de nacimiento");
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_equal"));
 				break;
 			}
 				
@@ -108,7 +108,7 @@ public class Functions_date_user {
 		edad=CalcAge(fnac); //Calculamos la edad
 		comprobarEdad = (edad - antig); //Restamos la edad y la antiguedad
 		if(comprobarEdad<18 || comprobarEdad>70){ //Comprobar si esta entre 18 y 70 a�os
-			JOptionPane.showMessageDialog(null, "La edad para poder trabajar es de 18 hasta 70 a�os");
+			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_max"));
 			correct=false;
 		}else{
 		correct=true;
@@ -124,7 +124,7 @@ public class Functions_date_user {
 		edad=CalcAge(fnac); //Calculamos la edad
 		comprobarEdad = (edad - antig); //Restamos la edad y la antiguedad
 		if(comprobarEdad<18){ //Comprobar si es mayor de 18
-			JOptionPane.showMessageDialog(null, "La edad no puede ser menor a 18 a�os");
+			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_age"));
 			correct=false;
 		}else{
 		correct=true;
@@ -155,7 +155,7 @@ public class Functions_date_user {
 																		  	//es mayor a la del alta del sistema
 			if(compara==3){
 				correct=false;
-				JOptionPane.showMessageDialog(null, "La fecha de nacimiento no puede ser posterior a la de alta en el sistema");
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_post_system"));
 			}else{
 				correct1=Functions_date_user.CompruebaFechaContract(fnac,((Cliente)user).getFechaAlta());
 				if(correct1==true){
@@ -180,7 +180,7 @@ public class Functions_date_user {
 																		  //es mayor a la de contrataci�n
 			if(compara==3){
 				correct=false;
-				JOptionPane.showMessageDialog(null, "La fecha de nacimiento no puede ser posterior a la de contrataci�n");
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("date_post_recruitment"));
 			}else{
 				correct1=Functions_date_user.CompruebaFechaContract(fnac,((Admin)user).getFechaCont());
 				if(correct1==true){

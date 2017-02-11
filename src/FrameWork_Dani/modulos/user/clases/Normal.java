@@ -14,8 +14,8 @@ public class Normal extends User {
 	//Atributos
 	@XStreamAlias("intereses")
 	private String intereses;
-	@XStreamAlias("navegador")
-	private String navegador;
+	@XStreamAlias("navigator")
+	private String navigator;
 	@XStreamAlias("comments")
 	private int comments;
 	@XStreamAlias("karma")
@@ -36,10 +36,10 @@ public class Normal extends User {
 	}
 	
 	public String getNavegador(){
-		return this.navegador;	
+		return this.navigator;	
 	}
-	public void setNavegador(String navegador){
-		this.navegador=navegador;
+	public void setNavegador(String navigator){
+		this.navigator=navigator;
 	}
 	
 	public int getComments(){	
@@ -73,7 +73,7 @@ public class Normal extends User {
 		cad=cad+(Language.getInstance().getProperty("age_is")+this.getEdad()+"\n");
 		cad=cad+(Language.getInstance().getProperty("dni_is")+this.getDni()+"\n");
 		cad=cad+(Language.getInstance().getProperty("interests_is")+this.getIntereses()+"\n");
-		cad=cad+(Language.getInstance().getProperty("navegator_is")+this.getNavegador()+"\n");
+		cad=cad+(Language.getInstance().getProperty("navigator_is")+this.getNavegador()+"\n");
 		cad=cad+(Language.getInstance().getProperty("ncomments_is")+this.getComments()+"\n");
 		cad=cad+(Language.getInstance().getProperty("karma_is") +this.getKarma()+"\n");
 		cad=cad+(Language.getInstance().getProperty("points_is")+this.getPoints()+"\n");

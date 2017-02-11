@@ -17,6 +17,7 @@ import com.thoughtworks.xstream.annotations.Annotations;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
 import FrameWork_Dani.clases.Settings;
+import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
@@ -43,10 +44,10 @@ public class Functions_save_users {
 	             ObjectOutputStream o=new ObjectOutputStream(fo);
 	             o.writeObject(Singleton.userNormal);
 	             o.close();
-	             JOptionPane.showMessageDialog(null, "Archivo TXT guardado con exito", "Archivo TXT", JOptionPane.INFORMATION_MESSAGE);
+	             JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("txt_save"),Language.getInstance().getProperty("txt_file"), JOptionPane.INFORMATION_MESSAGE);
 	         }
 	     } catch (Exception e) {
-	     	JOptionPane.showMessageDialog(null, "Error al grabar el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+	     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_txt_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	     }
 	}
 	
@@ -63,7 +64,7 @@ public class Functions_save_users {
             //JOptionPane.showMessageDialog(null, "Archivo TXT guardado con exito", "Archivo TXT", JOptionPane.INFORMATION_MESSAGE);
             
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, "Error al grabar el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+	     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_txt_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
         }
 	}
 	
@@ -94,11 +95,11 @@ public class Functions_save_users {
 	                fileXml.close();
 	                osw.close();
 	                os.close();
-	                JOptionPane.showMessageDialog(null, "Archivo XML guardado con exito", "Archivo XML", JOptionPane.INFORMATION_MESSAGE);
-	            }
-		    }catch (Exception e1){
-		    	JOptionPane.showMessageDialog(null, "Error al grabar el XML", "Error", JOptionPane.ERROR_MESSAGE);
-		    } 
+		            JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("xml_save"),Language.getInstance().getProperty("xml_file"), JOptionPane.INFORMATION_MESSAGE);
+		         }
+		     } catch (Exception e) {
+		     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_xml_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+		     }
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -123,7 +124,7 @@ public class Functions_save_users {
                 //JOptionPane.showMessageDialog(null, "Archivo XML guardado con exito", "Archivo XML", JOptionPane.INFORMATION_MESSAGE);
 			
 			}catch (Exception e1){
-		    	JOptionPane.showMessageDialog(null, "Error al grabar el XML", "Error", JOptionPane.ERROR_MESSAGE);
+		     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_xml_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		    }
 	}
 	
@@ -146,11 +147,11 @@ public class Functions_save_users {
 			            FileWriter fileXml = new FileWriter(PATH);
 		                fileXml.write(json.toString());
 		                fileXml.close(); 
-		                JOptionPane.showMessageDialog(null, "Archivo JSON guardado con exito", "Archivo JSON", JOptionPane.INFORMATION_MESSAGE);
-		          }
-	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
-	        }
+			            JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("json_save"),Language.getInstance().getProperty("json_file"), JOptionPane.INFORMATION_MESSAGE);
+			         }
+			     } catch (Exception e) {
+			     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_json_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			     }
 	    }
 	  
 	  public static void AutoSaveJsonNormal() {
@@ -166,7 +167,7 @@ public class Functions_save_users {
 	              fileXml.write(json.toString());
 	              fileXml.close(); 
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+		     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_json_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	    }
 	  
@@ -187,10 +188,10 @@ public class Functions_save_users {
 		             ObjectOutputStream o=new ObjectOutputStream(fo);
 		             o.writeObject(Singleton.userCliente);
 		             o.close();
-		             JOptionPane.showMessageDialog(null, "Archivo TXT guardado con exito", "Archivo TXT", JOptionPane.INFORMATION_MESSAGE);
+		             JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("txt_save"),Language.getInstance().getProperty("txt_file"), JOptionPane.INFORMATION_MESSAGE);
 		         }
 		     } catch (Exception e) {
-		     	JOptionPane.showMessageDialog(null, "Error al grabar el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+		     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_txt_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		     }
 		}
 		
@@ -207,7 +208,7 @@ public class Functions_save_users {
 	            //JOptionPane.showMessageDialog(null, "Archivo TXT guardado con exito", "Archivo TXT", JOptionPane.INFORMATION_MESSAGE);
 	            
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al grabar el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+		     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_txt_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 		}
 		
@@ -238,11 +239,11 @@ public class Functions_save_users {
 		                fileXml.close();
 		                osw.close();
 		                os.close();
-		                JOptionPane.showMessageDialog(null, "Archivo XML guardado con exito", "Archivo XML", JOptionPane.INFORMATION_MESSAGE);
-		            }
-			    }catch (Exception e1){
-			    	JOptionPane.showMessageDialog(null, "Error al grabar el XML", "Error", JOptionPane.ERROR_MESSAGE);
-			    } 
+			            JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("xml_save"),Language.getInstance().getProperty("xml_file"), JOptionPane.INFORMATION_MESSAGE);
+			         }
+			     } catch (Exception e) {
+			     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_xml_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+			     }
 		}
 		
 		@SuppressWarnings("deprecation")
@@ -267,7 +268,7 @@ public class Functions_save_users {
 	                //JOptionPane.showMessageDialog(null, "Archivo XML guardado con exito", "Archivo XML", JOptionPane.INFORMATION_MESSAGE);
 				
 				}catch (Exception e1){
-			    	JOptionPane.showMessageDialog(null, "Error al grabar el XML", "Error", JOptionPane.ERROR_MESSAGE);
+			     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_xml_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 			    }
 		}
 		
@@ -290,11 +291,11 @@ public class Functions_save_users {
 				            FileWriter fileXml = new FileWriter(PATH);
 			                fileXml.write(json.toString());
 			                fileXml.close(); 
-			                JOptionPane.showMessageDialog(null, "Archivo JSON guardado con exito", "Archivo JSON", JOptionPane.INFORMATION_MESSAGE);
-			          }
-		        } catch (Exception e) {
-		        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
-		        }
+				            JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("json_save"),Language.getInstance().getProperty("json_file"), JOptionPane.INFORMATION_MESSAGE);
+				         }
+				     } catch (Exception e) {
+				     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_json_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+				     }
 		    }
 		  
 		  public static void AutoSaveJsonClient() {
@@ -311,7 +312,7 @@ public class Functions_save_users {
 		              fileXml.close(); 
 		              //JOptionPane.showMessageDialog(null, "Archivo JSON guardado con exito", "Archivo JSON", JOptionPane.INFORMATION_MESSAGE);
 		        } catch (Exception e) {
-		        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+			     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_json_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		        }
 		    }
 		  
@@ -332,10 +333,10 @@ public class Functions_save_users {
 			             ObjectOutputStream o=new ObjectOutputStream(fo);
 			             o.writeObject(Singleton.userAdmin);
 			             o.close();
-			             JOptionPane.showMessageDialog(null, "Archivo TXT guardado con exito", "Archivo TXT", JOptionPane.INFORMATION_MESSAGE);
+			             JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("txt_save"),Language.getInstance().getProperty("txt_file"), JOptionPane.INFORMATION_MESSAGE);
 			         }
 			     } catch (Exception e) {
-			     	JOptionPane.showMessageDialog(null, "Error al grabar el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+			     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_txt_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 			     }
 			}
 			
@@ -352,7 +353,7 @@ public class Functions_save_users {
 		            //JOptionPane.showMessageDialog(null, "Archivo TXT guardado con exito", "Archivo TXT", JOptionPane.INFORMATION_MESSAGE);
 		            
 		        } catch (Exception e) {
-		        	JOptionPane.showMessageDialog(null, "Error al grabar el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+			     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_txt_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		        }
 			}
 			
@@ -383,11 +384,11 @@ public class Functions_save_users {
 			                fileXml.close();
 			                osw.close();
 			                os.close();
-			                JOptionPane.showMessageDialog(null, "Archivo XML guardado con exito", "Archivo XML", JOptionPane.INFORMATION_MESSAGE);
-			            }
-				    }catch (Exception e1){
-				    	JOptionPane.showMessageDialog(null, "Error al grabar el XML", "Error", JOptionPane.ERROR_MESSAGE);
-				    } 
+				            JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("xml_save"),Language.getInstance().getProperty("xml_file"), JOptionPane.INFORMATION_MESSAGE);
+				         }
+				     } catch (Exception e) {
+				     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_xml_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+				     }
 			}
 			
 			@SuppressWarnings("deprecation")
@@ -412,7 +413,7 @@ public class Functions_save_users {
 		                //JOptionPane.showMessageDialog(null, "Archivo XML guardado con exito", "Archivo XML", JOptionPane.INFORMATION_MESSAGE);
 					
 					}catch (Exception e1){
-				    	JOptionPane.showMessageDialog(null, "Error al grabar el XML", "Error", JOptionPane.ERROR_MESSAGE);
+				     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_xml_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 				    }
 			}
 			
@@ -435,11 +436,11 @@ public class Functions_save_users {
 					            FileWriter fileXml = new FileWriter(PATH);
 				                fileXml.write(json.toString());
 				                fileXml.close(); 
-				                JOptionPane.showMessageDialog(null, "Archivo JSON guardado con exito", "Archivo JSON", JOptionPane.INFORMATION_MESSAGE);
-				          }
-			        } catch (Exception e) {
-			        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
-			        }
+					            JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("json_save"),Language.getInstance().getProperty("json_file"), JOptionPane.INFORMATION_MESSAGE);
+					         }
+					     } catch (Exception e) {
+					     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_json_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
+					     }
 			    }
 			  
 			  public static void AutoSaveJsonAdmin() {
@@ -456,7 +457,7 @@ public class Functions_save_users {
 			              fileXml.close(); 
 			              //JOptionPane.showMessageDialog(null, "Archivo JSON guardado con exito", "Archivo JSON", JOptionPane.INFORMATION_MESSAGE);
 			        } catch (Exception e) {
-			        	JOptionPane.showMessageDialog(null, "Error al grabar el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+				     	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_json_save"),Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 			        }
 			    }
 

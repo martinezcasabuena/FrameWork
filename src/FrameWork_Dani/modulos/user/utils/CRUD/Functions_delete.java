@@ -20,7 +20,7 @@ public class Functions_delete {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location = -1;
-			Normal normal= (Normal) Functions_user.CreateUser_dni(0);
+			Normal normal=Functions_find.IDnormal();
 			location = Functions_find.find_normal(normal);
 			if (location != -1) {
 				Singleton.userNormal.remove(location);
@@ -38,7 +38,7 @@ public class Functions_delete {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location = -1;
-			Cliente cliente= (Cliente) Functions_user.CreateUser_dni(1);
+			Cliente cliente=Functions_find.IDclient();
 			location = Functions_find.find_client(cliente);
 			if (location != -1) {
 				Singleton.userCliente.remove(location);
@@ -57,7 +57,7 @@ public class Functions_delete {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location = -1;
-			Admin admin= (Admin) Functions_user.CreateUser_dni(2);
+			Admin admin=Functions_find.IDadmin();
 			location = Functions_find.find_admin(admin);
 			if (location != -1) {
 				Singleton.userAdmin.remove(location);

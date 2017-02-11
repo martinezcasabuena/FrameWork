@@ -21,7 +21,7 @@ public class Functions_update {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location1 = -1;
-			Normal normal= (Normal) Functions_user.CreateUser_dni(0);
+			Normal normal=Functions_find.IDnormal();
 			location1 = Functions_find.find_normal(normal);
 			if (location1 != -1) {
 				normal = Singleton.userNormal.get(location1);
@@ -40,7 +40,7 @@ public class Functions_update {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location1 = -1;
-			Cliente client= (Cliente) Functions_user.CreateUser_dni(1);
+			Cliente client=Functions_find.IDclient();			
 			location1 = Functions_find.find_client(client);
 			if (location1 != -1) {
 				client = Singleton.userCliente.get(location1);
@@ -60,7 +60,7 @@ public class Functions_update {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		}else{
 			location1 = -1;
-			Admin admin= (Admin) Functions_user.CreateUser_dni(2);
+			Admin admin=Functions_find.IDadmin();
 			location1 = Functions_find.find_admin(admin);
 			if (location1 != -1) {
 				admin = Singleton.userAdmin.get(location1);

@@ -28,7 +28,7 @@ public class Main {
 		
 		do {
 			String options[] = { Language.getInstance().getProperty("normal"), Language.getInstance().getProperty("client"),Language.getInstance().getProperty("admin"),
-					 Language.getInstance().getProperty("options"),Language.getInstance().getProperty("exit") };
+					 Language.getInstance().getProperty("settings"),Language.getInstance().getProperty("exit") };
 			String setting[] = {Language.getInstance().getProperty("date_format"),Language.getInstance().getProperty("currency"),Language.getInstance().getProperty("decimal"),
 					Language.getInstance().getProperty("language"),Language.getInstance().getProperty("dummies"),Language.getInstance().getProperty("save_format"),
 					Language.getInstance().getProperty("back")};
@@ -171,7 +171,6 @@ public class Main {
 								break;
 							case 3:
 								String languageOpt=Language.LanguageOptions(); //Guardamos el idioma en una variable dentro de la clase Language
-								//Settings.getInstance().lang.setLanguage(languageOpt);
 								Language.getInstance().setLanguage(languageOpt);
 								break;
 							case 4:

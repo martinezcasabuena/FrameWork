@@ -48,7 +48,7 @@ public class Functions_read_dummies {
 	
 	public static void readClient (){
 		int menu = 0, location = -1;
-		String options[] = { "Leer todos", "Leer un usuario" };
+		String options[] = { Language.getInstance().getProperty("read_all"),Language.getInstance().getProperty("read_user")};
 		
 		if(Singleton.userCliente.isEmpty()){
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
@@ -80,7 +80,7 @@ public class Functions_read_dummies {
 	
 	public static void readAdmin (){
 		int menu = 0, location = -1;
-		String options[] = { "Leer todos", "Leer un usuario" };
+		String options[] = { Language.getInstance().getProperty("read_all"),Language.getInstance().getProperty("read_user")};
 		
 		if(Singleton.userAdmin.isEmpty()){
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);

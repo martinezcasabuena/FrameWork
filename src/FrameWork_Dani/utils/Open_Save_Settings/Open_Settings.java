@@ -12,6 +12,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
 import FrameWork_Dani.clases.Settings;
+import FrameWork_Dani.modulos.language.Language;
 
 public class Open_Settings {
 	
@@ -40,7 +41,7 @@ public class Open_Settings {
 	        //Settings.getInstance().setTheme(config.getTheme());
 	        
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, "Error");
+        	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_settings"));
         }
     }
 }

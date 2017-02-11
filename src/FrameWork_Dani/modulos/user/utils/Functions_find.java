@@ -79,7 +79,7 @@ public class Functions_find {
 		Admin a1 = null;
 		String ID = "";
 		String [] admin = generate_vector_admin ();
-		String search = Functions.ComboMenu(admin,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("asktitle"));
+		String search = Functions.ComboMenu(admin,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("read_user"));
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);
@@ -93,7 +93,7 @@ public class Functions_find {
 		Cliente c1 = null;
 		String ID = "";
 		String [] client = generate_vector_client ();
-		String search = Functions.ComboMenu(client,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("asktitle"));
+		String search = Functions.ComboMenu(client,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("read_user"));
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);
@@ -107,7 +107,7 @@ public class Functions_find {
 		Normal u1 = null;
 		String ID = "";
 		String [] normal = generate_vector_normal ();
-		String search = Functions.ComboMenu(normal,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("asktitle"));
+		String search = Functions.ComboMenu(normal,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("read_user"));
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);

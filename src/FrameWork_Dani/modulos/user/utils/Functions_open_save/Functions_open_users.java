@@ -18,6 +18,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.Annotations;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
+import FrameWork_Dani.modulos.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
@@ -45,7 +46,7 @@ public class Functions_open_users {
     			oi.close();
             }
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, "Error al leer el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_txt_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
         }
     	return Singleton.userNormal;
     }
@@ -62,7 +63,7 @@ public class Functions_open_users {
 			Singleton.userNormal = (ArrayList<Normal>)oi.readObject();
 			oi.close();
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, "Error al leer el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_txt_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
         }
     	return Singleton.userNormal;
     }
@@ -84,7 +85,7 @@ public class Functions_open_users {
 	                Singleton.userNormal = (ArrayList <Normal>)xstream.fromXML(new FileReader(PATH));
 	            }
 	        } catch (Exception e1) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el XML", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_xml_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userNormal;
 	    }
@@ -98,7 +99,7 @@ public class Functions_open_users {
 	            PATH=new java.io.File(".").getCanonicalPath()+ "/src/FrameWork_Dani/modulos/user/utils/normal/archivos/normal.xml";
                 Singleton.userNormal = (ArrayList <Normal>)xstream.fromXML(new FileReader(PATH));
 	        } catch (Exception e1) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el XML", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_xml_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userNormal;
 	    }
@@ -134,7 +135,7 @@ public class Functions_open_users {
 	            	}
 	          } 
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, "Error al leer el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_json_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
         }
         return Singleton.userNormal;
     }
@@ -163,7 +164,7 @@ public class Functions_open_users {
 				  Singleton.userNormal.add((Normal)user);
         	}
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, "Error al leer el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_json_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
         }
         return Singleton.userNormal;
     }
@@ -187,7 +188,7 @@ public class Functions_open_users {
 	    			oi.close();
 	            }
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_txt_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	    	return Singleton.userCliente;
 	    }
@@ -204,7 +205,7 @@ public class Functions_open_users {
 				Singleton.userCliente = (ArrayList<Cliente>)oi.readObject();
 				oi.close();
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_txt_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	    	return Singleton.userCliente;
 	    }
@@ -226,7 +227,7 @@ public class Functions_open_users {
 		                Singleton.userCliente = (ArrayList <Cliente>)xstream.fromXML(new FileReader(PATH));
 		            }
 		        } catch (Exception e1) {
-		        	JOptionPane.showMessageDialog(null, "Error al leer el XML", "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_xml_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		        }
 		        return Singleton.userCliente;
 		    }
@@ -240,7 +241,7 @@ public class Functions_open_users {
 		            PATH=new java.io.File(".").getCanonicalPath()+ "/src/FrameWork_Dani/modulos/user/utils/cliente/archivos/cliente.xml";
 	                Singleton.userCliente = (ArrayList <Cliente>)xstream.fromXML(new FileReader(PATH));
 		        } catch (Exception e1) {
-		        	JOptionPane.showMessageDialog(null, "Error al leer el XML", "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_xml_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		        }
 		        return Singleton.userCliente;
 		    }
@@ -276,7 +277,7 @@ public class Functions_open_users {
 		            	}
 		          } 
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_json_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userCliente;
 	    }
@@ -305,7 +306,7 @@ public class Functions_open_users {
 					  Singleton.userCliente.add((Cliente)user);
 	        	}
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_json_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userCliente;
 	    }
@@ -329,7 +330,7 @@ public class Functions_open_users {
 	    			oi.close();
 	            }
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_txt_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	    	return Singleton.userAdmin;
 	    }
@@ -346,7 +347,7 @@ public class Functions_open_users {
 				Singleton.userAdmin = (ArrayList<Admin>)oi.readObject();
 				oi.close();
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el TXT", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_txt_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	    	return Singleton.userAdmin;
 	    }
@@ -368,7 +369,7 @@ public class Functions_open_users {
 		                Singleton.userAdmin = (ArrayList <Admin>)xstream.fromXML(new FileReader(PATH));
 		            }
 		        } catch (Exception e1) {
-		        	JOptionPane.showMessageDialog(null, "Error al leer el XML", "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_xml_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		        }
 		        return Singleton.userAdmin;
 		    }
@@ -382,7 +383,7 @@ public class Functions_open_users {
 		            PATH=new java.io.File(".").getCanonicalPath()+ "/src/FrameWork_Dani/modulos/user/utils/admin/archivos/admin.xml";
 	                Singleton.userAdmin = (ArrayList <Admin>)xstream.fromXML(new FileReader(PATH));
 		        } catch (Exception e1) {
-		        	JOptionPane.showMessageDialog(null, "Error al leer el XML", "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_xml_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		        }
 		        return Singleton.userAdmin;
 		    }
@@ -416,7 +417,7 @@ public class Functions_open_users {
 		            }
 		          } 
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_json_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userAdmin;
 	    }
@@ -445,7 +446,7 @@ public class Functions_open_users {
 					  Singleton.userAdmin.add((Admin)user);
 	        	}
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, "Error al leer el JSON", "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, Language.getInstance().getProperty("error_json_open"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userAdmin;
 	    }

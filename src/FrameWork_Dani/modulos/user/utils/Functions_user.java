@@ -37,7 +37,7 @@ public class Functions_user {
 			user.setFechaNac(Functions_date_user.DateNac());
 			user.setDni(dni); //Utilizamos el DNI que hemos usado para comprobar si existe el usuario
 			((Normal)user).setIntereses(Functions_data_user.askInterests());
-			((Normal)user).setNavegador(Functions_data_user.askNavegator());
+			((Normal)user).setNavegador(Functions_data_user.askNavigator());
 			((Normal)user).setComments(Functions_data_user.askNumComments());
 		}else
 		if(i==1){
@@ -104,7 +104,7 @@ public class Functions_user {
 		
 		if(user instanceof Normal){
 			String optionsNormal[] = { Language.getInstance().getProperty("name"), Language.getInstance().getProperty("address"),Language.getInstance().getProperty("birth_date"),
-					Language.getInstance().getProperty("sex"),Language.getInstance().getProperty("interests"),Language.getInstance().getProperty("navegator"),
+					Language.getInstance().getProperty("sex"),Language.getInstance().getProperty("interests"),Language.getInstance().getProperty("navigator"),
 					Language.getInstance().getProperty("n_comments"),Language.getInstance().getProperty("all") };
 			opt = JOptionPane.showOptionDialog(null, Language.getInstance().getProperty("choose_opt"),Language.getInstance().getProperty("update_normal"), 0, JOptionPane.QUESTION_MESSAGE, null,
 					optionsNormal, optionsNormal[0]);
@@ -131,7 +131,7 @@ public class Functions_user {
 				break;
 				
 			case 5:
-				((Normal)user).setNavegador(Functions_data_user.askNavegator());
+				((Normal)user).setNavegador(Functions_data_user.askNavigator());
 				break;
 
 			case 6:
@@ -145,7 +145,7 @@ public class Functions_user {
 				user.setSexe(Functions_data_user.askSex());
 				user.setDni(Functions_data_user.askDni());
 				((Normal)user).setIntereses(Functions_data_user.askInterests());
-				((Normal)user).setNavegador(Functions_data_user.askNavegator());
+				((Normal)user).setNavegador(Functions_data_user.askNavigator());
 				((Normal)user).setComments(Functions_data_user.askNumComments());
 				break;	
 				}
