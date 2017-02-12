@@ -2,7 +2,7 @@ package FrameWork_Dani.utils;
 
 import javax.swing.JOptionPane;
 
-import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.clases.language.Language;
 
 public class Functions {
 	

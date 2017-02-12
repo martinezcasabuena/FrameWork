@@ -5,7 +5,7 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import FrameWork_Dani.Main;
 import FrameWork_Dani.clases.Fecha;
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.clases.language.Language;
 import FrameWork_Dani.modulos.user.utils.Functions_extra_user;
 
 @XStreamAlias("cliente")

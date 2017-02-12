@@ -12,7 +12,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.clases.language.Language;
 
 public class Open_Settings {
 	

@@ -7,7 +7,7 @@ import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.utils.Format;
 import FrameWork_Dani.utils.Functions;
 import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
-import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.clases.language.Language;
 import FrameWork_Dani.modulos.user.utils.Functions_user;
 import FrameWork_Dani.modulos.user.utils.CRUD.Functions_create;
 import FrameWork_Dani.modulos.user.utils.CRUD.Functions_delete;

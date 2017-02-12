@@ -1,4 +1,4 @@
-package FrameWork_Dani.modulos.language;
+package FrameWork_Dani.clases.language;
 
 import java.io.IOException;
 import java.util.Properties;

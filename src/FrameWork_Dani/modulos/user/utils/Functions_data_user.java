@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import FrameWork_Dani.Main;
 import FrameWork_Dani.clases.Fecha;
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.clases.language.Language;
 import FrameWork_Dani.utils.Functions;
 import FrameWork_Dani.utils.Validate;
 

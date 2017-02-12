@@ -2,7 +2,7 @@ package FrameWork_Dani.utils;
 import java.text.DecimalFormat;
 
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.modulos.language.Language;
+import FrameWork_Dani.clases.language.Language;
 
 public class Format {
 	
