@@ -3,10 +3,12 @@ package FrameWork_Dani.modulos.user.utils;
 import javax.swing.JOptionPane;
 
 import FrameWork_Dani.clases.Fecha;
+import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.clases.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
+import FrameWork_Dani.modulos.user.clases.Singleton;
 import FrameWork_Dani.modulos.user.clases.User;
 
 public class Functions_user_dummies {
@@ -27,41 +29,70 @@ public class Functions_user_dummies {
 	
 	//CRUD Generico
 	
-	public static User CreateUser_Generic(int i,String fechaForm){
+	public static User CreateUser_Generic(int i){
 		User user=null;
 		if(i==0){
-			user=new Normal();
-			user.setNom("UserNormal");
-			user.setAdreca("Avd Pruebas 5");
-			user.setSexe("H");
-			user.setFechaNac(new Fecha("01/01/1980",fechaForm));
-			user.setDni("49264129S");
-			((Normal)user).setIntereses("Programacion");
-			((Normal)user).setNavegador("Google Chrome");
-			((Normal)user).setComments(15);
+			for (int j=0; j<5; j++) {
+				user=new Normal();
+				user.setNom(Functions_dummies.name());
+				user.setAdreca(Functions_dummies.address());
+				user.setSexe(Functions_dummies.sex());
+				user.setFechaNac(Functions_dummies.datebirthday());
+				user.setDni(Functions_dummies.DNI());
+				((Normal)user).setIntereses(Functions_dummies.interests());
+				((Normal)user).setNavegador(Functions_dummies.navigator());
+				((Normal)user).setComments(Functions_dummies.comments());
+				Singleton.userNormal.add((Normal) user);
+			}
 		}else
 		if(i==1){
-			user= new Cliente();
-			user.setNom("UserCliente");
-			user.setAdreca("Avd Pruebas 10");
-			user.setSexe("H");
-			user.setFechaNac(new Fecha("01/01/1970",fechaForm));
-			user.setDni("49264129S");
-			((Cliente)user).setFechaAlta(Functions_date_user.DateAlta());
-			((Cliente)user).setNcuenta("11112222333344445555");
-			((Cliente)user).setCompras(15);
+			for (int j=0; j<5; j++) {
+				user=new Cliente();
+				user.setNom(Functions_dummies.name());
+				user.setAdreca(Functions_dummies.address());
+				user.setSexe(Functions_dummies.sex());
+				user.setFechaNac(Functions_dummies.datebirthday());
+				user.setDni(Functions_dummies.DNI());
+				((Cliente)user).setFechaAlta(Functions_date_user.DateAlta());
+				((Cliente)user).setNcuenta(Functions_dummies.nAccount());
+				((Cliente)user).setCompras(Functions_dummies.shopping());
+				Singleton.userCliente.add((Cliente) user);
+			}
 		}else
 		if(i==2){
-			user=new Admin();
-			user.setNom("UserAdmin");
-			user.setAdreca("Avd Pruebas 20");
-			user.setSexe("H");
-			user.setFechaNac(new Fecha("01/01/1990",fechaForm));
-			user.setDni("49264129S");
-			((Admin)user).setFechaCont(new Fecha("01/01/2010",fechaForm));
-			((Admin)user).setTrabajo("Tester");
+			for (int j=0; j<5; j++) {
+				user=new Admin();
+				user.setNom(Functions_dummies.name());
+				user.setAdreca(Functions_dummies.address());
+				user.setSexe(Functions_dummies.sex());
+				user.setFechaNac(Functions_dummies.datebirthday());
+				user.setDni(Functions_dummies.DNI());
+				((Admin)user).setFechaCont(Functions_dummies.datecontract());
+				((Admin)user).setTrabajo(Functions_dummies.Job());
+				Singleton.userAdmin.add((Admin) user);
+			}
 		}
 		
+		return user;
+	}
+	
+	public static User CreateUser_dni (int i ){
+		User user=null;
+		if(i==0){
+			Singleton.dni=Functions_data_user.askDni();
+			dni=Singleton.dni.toString(); //Gurdamos el DNI que hemos introducido para comprobar el usuario.
+			user=new Normal(Singleton.dni);
+		}else
+		if(i==1){
+			Singleton.dni=Functions_data_user.askDni();
+			dni=Singleton.dni.toString(); //Gurdamos el DNI que hemos introducido para comprobar el usuario.
+			user=new Cliente(Singleton.dni);
+		}else
+		if(i==2){
+			Singleton.dni=Functions_data_user.askDni();
+			dni=Singleton.dni.toString(); //Gurdamos el DNI que hemos introducido para comprobar el usuario.
+			user=new Admin(Singleton.dni);
+		}
 		return user;
 	}
 	
@@ -79,12 +110,12 @@ public class Functions_user_dummies {
 		return cad;
 	}
 	
-	public static User UpdateUser_Generic(User user,String fechaForm){
+	public static User UpdateUser_Generic(User user){
+		String fechaForm=Settings.getInstance().getFechaForm();
 		int opt = 0;
-		
 		if(user instanceof Normal){
 			String optionsNormal[] = { Language.getInstance().getProperty("name"), Language.getInstance().getProperty("address"),Language.getInstance().getProperty("birth_date"),
-					Language.getInstance().getProperty("sex"), Language.getInstance().getProperty("interests"),Language.getInstance().getProperty("navegator"),
+					Language.getInstance().getProperty("sex"),Language.getInstance().getProperty("interests"),Language.getInstance().getProperty("navigator"),
 					Language.getInstance().getProperty("n_comments"),Language.getInstance().getProperty("all") };
 			opt = JOptionPane.showOptionDialog(null, Language.getInstance().getProperty("choose_opt"),Language.getInstance().getProperty("update_normal"), 0, JOptionPane.QUESTION_MESSAGE, null,
 					optionsNormal, optionsNormal[0]);
@@ -223,6 +254,5 @@ public class Functions_user_dummies {
 
 		return user;
 		}
-
 
 }

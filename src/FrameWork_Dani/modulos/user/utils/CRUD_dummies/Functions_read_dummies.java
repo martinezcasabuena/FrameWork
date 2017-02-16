@@ -33,7 +33,6 @@ public class Functions_read_dummies {
 				case 1:
 					location = -1;
 					Normal normal=Functions_find.IDnormal();
-					//Normal normal= (Normal) Functions_user.CreateUser_dni(0);
 					location = Functions_find.find_normal(normal);
 					if (location != -1) {
 						normal = Singleton.userNormal.get(location);
@@ -65,7 +64,6 @@ public class Functions_read_dummies {
 				case 1:
 					location = -1;
 					Cliente cliente=Functions_find.IDclient();
-					//Cliente cliente= (Cliente) Functions_user.CreateUser_dni(1);
 					location = Functions_find.find_client(cliente);
 					if (location != -1) {
 						cliente = Singleton.userCliente.get(location);
@@ -97,7 +95,6 @@ public class Functions_read_dummies {
 				case 1:
 					location = -1;
 					Admin admin=Functions_find.IDadmin();
-					//Admin admin= (Admin) Functions_user.CreateUser_dni(2);
 					location = Functions_find.find_admin(admin);
 					if (location != -1) {
 						admin = Singleton.userAdmin.get(location);

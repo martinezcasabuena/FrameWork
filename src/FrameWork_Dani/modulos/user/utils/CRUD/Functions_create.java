@@ -21,7 +21,7 @@ public class Functions_create {
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("si_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		} else {
-			normal=(Normal) Functions_user.CreateUser_Generic(0,Settings.getInstance().fechaForm);
+			normal=(Normal) Functions_user.CreateUser_Generic(0);
 			Singleton.userNormal.add((Normal) normal);
 		}
 	}
@@ -34,7 +34,7 @@ public class Functions_create {
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("si_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		} else {
-			cliente=(Cliente) Functions_user.CreateUser_Generic(1,Settings.getInstance().fechaForm);
+			cliente=(Cliente) Functions_user.CreateUser_Generic(1);
 			Singleton.userCliente.add((Cliente) cliente);
 		}
 	}
@@ -47,7 +47,7 @@ public class Functions_create {
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("si_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
 		} else {
-			admin=(Admin) Functions_user.CreateUser_Generic(2,Settings.getInstance().fechaForm);
+			admin=(Admin) Functions_user.CreateUser_Generic(2);
 			Singleton.userAdmin.add((Admin) admin);
 		}
 	}

@@ -1,0 +1,253 @@
+package FrameWork_Dani.modulos.user.utils;
+
+import java.util.Random;
+
+import FrameWork_Dani.clases.Fecha;
+import FrameWork_Dani.clases.Settings;
+
+
+public class Functions_dummies {
+	public static String dni(int dni) {
+		String NIF_STRING_ASOCIATION = "TRWAGMYFPDXBNJZSQVHLCKE";
+        return String.valueOf(dni) + NIF_STRING_ASOCIATION.charAt(dni % 23);
+    }
+	
+	public static String DNI (){
+		String cad = "";
+        long time = new java.util.GregorianCalendar().getTimeInMillis();
+        Random random = new Random(time);
+        while (cad.length() < 8) {
+            char c = (char) random.nextInt(255);
+            if ((c >= '0' && c <= '9')) {
+                cad += c;
+            }
+        }
+        int numberdni = Integer.parseInt(cad);
+        return dni(numberdni);
+	}
+	
+	public static String user (){
+		String user = "";
+		String[] users = {"vicent", "walter", "joan", "maria", "daniel", "josep", "sara", "pepa", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", "atalia", "veronica", "fina",
+	            "pepe", "oscar", "lorelay", "jim", "lola", "laia", "ismael", "jordi", "ramon", "javier", "nuria",
+	            "elena", "beltran", "pablo", "juanjo"};
+		
+		int position = (int) (Math.random() * 222) % 10;
+		return user = users[position];
+	}
+	
+	
+	public static String name (){
+		String name = "";
+		String[] names = {"vicent", "walter", "joan", "maria", "daniel", "josep", "sara", "pepa", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", "atalia", "veronica", "fina",
+	            "pepe", "oscar", "lorelay", "jim", "lola", "laia", "ismael", "jordi", "ramon", "javier", "nuria",
+	            "elena", "beltran", "pablo", "juanjo"};
+		
+		int position = (int) (Math.random() * 222) % 10;
+		return name = names[position];
+	}
+	
+	public static String surname (){
+		String surname = "";
+		String [] surnames = {"alfonso", "aliaga", "bas", "bataller", "boluda", "conesa", "camarena", "cucart", "doria",
+					"ferrero", "garcia", "figuera", "tormo", "montagud", "gramage", "ubeda", "revert", "cordoba", "sempere",
+					"martinez", "lopez", "albuixech", "torro", "belda", "mateu", "ribera", "satorres", "rubio", "cifuentes",
+					"frances", "gomez", "mico", "ferrandiz", "casanova"};
+		
+		int position = (int) (Math.random() * 222) % 10;
+		return surname = surnames[position];
+	}
+	
+	public static String address (){
+		String address = "";
+		String [] adresses = {"Calle alfonso", "Avd aliaga", "Avd bas", "Calle bataller", "Avd boluda", "cAvd onesa", "Avd camarena",
+					"Calle cucart", "Avd doria","Avd ferrero", "Calle garcia", "Avd figuera", "Calle tormo", "Calle montagud",
+					"Calle gramage","Calle ubeda", "Calle revert", "Avd cordoba", "Avd sempere","Calle martinez", "Avd lopez",
+					"Avd albuixech","Calle torro", "Calle belda", "Calle mateu", "Avd ribera", "Avd satorres", "Avd rubio", "cifuentes",
+					"Calle frances","Calle gomez", "Calle mico", "Calle esad", "Calle casanova"};
+		
+		int position = (int) (Math.random() * 222) % 10;
+		return address = adresses[position];
+	}
+	
+	public static String interests (){
+		String[] interests = {"Tecnologia","Ciencias","Deportes","Politica","Hogar","Naturaleza","Fauna"};
+		Random random = new Random();
+	    int select = random.nextInt(interests.length); 
+		return interests[select];
+	}
+	
+	public static String navigator (){
+		String[] navigators = {"Google Chrome","Mozilla FireFox","Opera","Safari","Microsoft Edge","Internet Explorer"};
+		Random random = new Random();
+	    int select = random.nextInt(navigators.length); 
+		return navigators[select];
+	}
+	
+	public static int comments (){
+		int comments = (int) (Math.random() * (10 - 100) + 100);
+		return (int) Math.rint(comments * 100) / 100;
+	}
+	
+	public static String email (){
+		String email = "";
+		String[] emails = {"vicent", "walter", "joan", "maria", "daniel", "josep", "sara", "pepa", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", "atalia", "veronica", "fina",
+	            "pepe", "oscar", "lorelay", "jim", "lola", "laia", "ismael", "jordi", "ramon", "javier", "nuria",
+	            "elena", "beltran", "pablo", "juanjo"};
+		
+		int position = (int) (Math.random() * 222) % 10;
+		return email = emails[position]+"@gmail.com";
+	}
+	public static String sex(){
+		 String [] sex = {"H", "M"};
+	     Random random = new Random();
+	     int select = random.nextInt(sex.length); 
+	
+	     return sex[select];
+	}
+	
+	public static String Job(){
+		 String [] job = {"Tester", "Programmer","Analyst","Designer","Hardware Expert","Software Expert","Teacher","Engineer"};
+	     Random random = new Random();
+	     int select = random.nextInt(job.length); 
+	
+	     return job[select];
+	}
+	
+	public static String mobilephone (){
+		String mobilephone = "";
+        long time = new java.util.GregorianCalendar().getTimeInMillis();
+        Random random = new Random(time);
+        while (mobilephone.length() < 9) {
+            char c = (char) random.nextInt(255);
+            if ((c >= '0' && c <= '9')) {
+            	mobilephone += c;
+            }
+        }
+        return mobilephone;
+	}
+	
+	public static String nAccount (){
+		String nAccount = "";
+        long time = new java.util.GregorianCalendar().getTimeInMillis();
+        Random random = new Random(time);
+        while (nAccount.length() < 20) {
+            char c = (char) random.nextInt(255);
+            if ((c >= '0' && c <= '9')) {
+            	nAccount += c;
+            }
+        }
+        return nAccount;
+	}
+	
+	public static Fecha datebirthday (){
+		String fechaform=Settings.getInstance().getFechaForm();
+		String [] years = {"19", "20"};
+		String fecha="";
+		int day = (int) (Math.random() * (1 - 31) + 31);
+		int month = (int) (Math.random() * (1 - 12) + 12);
+		int year3 = (int) (Math.random() * (0 - 99) + 99);
+		int position = (int) (Math.random() * 222) % 2;
+		String year2 = years[position]+year3;
+		int year = Integer.parseInt(year2);
+		switch (fechaform) {
+		case "dd/mm/yyyy":
+			fecha=day+"/"+month+"/"+year;
+			break;
+		case "dd-mm-yyyy":
+			fecha=day+"-"+month+"-"+year;
+			break;
+		case "yyyy/mm/dd":
+			fecha=year+"/"+month+"/"+day;
+			break;
+		case "yyyy-mm-dd":
+			fecha=year+"-"+month+"-"+day;
+			break;
+		}
+		Fecha Fecha=new Fecha (fecha,fechaform);
+		return Fecha;
+		
+	}
+	
+	public static Fecha datecontract (){
+		String fechaform=Settings.getInstance().getFechaForm();
+		String [] years = {"19", "20"};
+		String fecha="";
+		int day = (int) (Math.random() * (1 - 31) + 31);
+		int month = (int) (Math.random() * (1 - 12) + 12);
+		int year3 = (int) (Math.random() * (0 - 99) + 99);
+		int position = (int) (Math.random() * 222) % 2;
+		String year2 = years[position]+year3;
+		int year = Integer.parseInt(year2);
+		switch (fechaform) {
+		case "dd/mm/yyyy":
+			fecha=day+"/"+month+"/"+year;
+			break;
+		case "dd-mm-yyyy":
+			fecha=day+"-"+month+"-"+year;
+			break;
+		case "yyyy/mm/dd":
+			fecha=year+"/"+month+"/"+day;
+			break;
+		case "yyyy-mm-dd":
+			fecha=year+"-"+month+"-"+day;
+			break;
+		}
+		Fecha Fecha=new Fecha (fecha,fechaform);
+		return Fecha;
+	}
+	
+	
+	
+	public static float incentive (){
+		float incentive = (float) (Math.random() * (200 - 500) + 500);
+		return (float) Math.rint(incentive * 100) / 100;
+	}
+	
+	public static int activity (){
+		int activity = (int) (Math.random() * (10 - 100) + 100);
+		return (int) Math.rint(activity * 100) / 100;
+	}
+	
+	/* Client
+	 * 
+	 */
+	public static int shopping (){
+		float shopping = (int) (Math.random() * (50 - 1000) + 1000);
+		return (int) Math.rint(shopping * 100) / 100;
+	}
+	
+	
+	
+	/* BUILDER
+	 * 
+	 */
+	/*
+	public static void makedummies_admin () {
+		for (int i=0; i<5; i++) {
+			
+			Admin admin = new Admin (DNI(), name(), surname(), email(), mobilephone());
+			Singleton.useradmin.add(a1);
+		}
+	}
+	
+	public static void makedummies_client () {
+		for (int i=0; i<5; i++) {
+			Client c1 = new Client(DNI(), user(), pass(), avatar(), state(), name(), surname(), email(), mobilephone(),
+					datebirthday(), shopping(), dtos(), premium(), typeclient());
+			Singleton.userclient.add(c1);
+		}
+	}
+	
+	public static void makedummies_userregister () {
+		for (int i=0; i<5; i++) {
+			User_register u1 = new User_register(DNI(), user(), pass(), avatar(), state(), name(), surname(),
+					email(), mobilephone(), datebirthday(), movement(), point());
+			Singleton.userregister.add(u1);
+		}
+	}
+	*/
+}

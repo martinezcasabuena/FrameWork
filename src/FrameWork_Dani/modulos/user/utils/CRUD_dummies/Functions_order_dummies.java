@@ -21,7 +21,7 @@ import FrameWork_Dani.utils.Functions;
 
 public class Functions_order_dummies {
 	
-	public static void OrderNormal(){
+public static void OrderNormal(){
 		
 		String [] options = { "A) "+Language.getInstance().getProperty("dni"),
 							  "B) "+Language.getInstance().getProperty("name"),

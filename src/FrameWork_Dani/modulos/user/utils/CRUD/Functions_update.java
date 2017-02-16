@@ -25,7 +25,7 @@ public class Functions_update {
 			location1 = Functions_find.find_normal(normal);
 			if (location1 != -1) {
 				normal = Singleton.userNormal.get(location1);
-				Functions_user.UpdateUser_Generic(normal, Settings.getInstance().fechaForm);
+				Functions_user.UpdateUser_Generic(normal);
 				Singleton.userNormal.set(location1, normal);
 			}else {
 				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
@@ -44,7 +44,7 @@ public class Functions_update {
 			location1 = Functions_find.find_client(client);
 			if (location1 != -1) {
 				client = Singleton.userCliente.get(location1);
-				Functions_user.UpdateUser_Generic(client, Settings.getInstance().fechaForm);
+				Functions_user.UpdateUser_Generic(client);
 				Singleton.userCliente.set(location1, client);
 			}else {
 				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
@@ -64,7 +64,7 @@ public class Functions_update {
 			location1 = Functions_find.find_admin(admin);
 			if (location1 != -1) {
 				admin = Singleton.userAdmin.get(location1);
-				Functions_user.UpdateUser_Generic(admin, Settings.getInstance().fechaForm);
+				Functions_user.UpdateUser_Generic(admin);
 				Singleton.userAdmin.set(location1, admin);
 			}else {
 				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("no_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);

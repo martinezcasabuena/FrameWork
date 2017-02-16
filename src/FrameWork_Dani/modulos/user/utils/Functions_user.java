@@ -2,6 +2,7 @@ package FrameWork_Dani.modulos.user.utils;
 
 import javax.swing.JOptionPane;
 
+import FrameWork_Dani.clases.Settings;
 import FrameWork_Dani.clases.language.Language;
 import FrameWork_Dani.modulos.user.clases.Admin;
 import FrameWork_Dani.modulos.user.clases.Cliente;
@@ -27,7 +28,8 @@ public class Functions_user {
 	
 	//CRUD Generico
 	
-	public static User CreateUser_Generic(int i,String fechaForm){
+	public static User CreateUser_Generic(int i){
+		String fechaForm=Settings.getInstance().getFechaForm();
 		User user=null;
 		if(i==0){
 			user=new Normal();
@@ -99,9 +101,9 @@ public class Functions_user {
 		return cad;
 	}
 	
-	public static User UpdateUser_Generic(User user,String fechaForm){
+	public static User UpdateUser_Generic(User user){
+		String fechaForm=Settings.getInstance().getFechaForm();
 		int opt = 0;
-		
 		if(user instanceof Normal){
 			String optionsNormal[] = { Language.getInstance().getProperty("name"), Language.getInstance().getProperty("address"),Language.getInstance().getProperty("birth_date"),
 					Language.getInstance().getProperty("sex"),Language.getInstance().getProperty("interests"),Language.getInstance().getProperty("navigator"),

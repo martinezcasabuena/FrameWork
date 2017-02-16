@@ -1,56 +1,18 @@
 package FrameWork_Dani.modulos.user.utils.CRUD_dummies;
 
-import javax.swing.JOptionPane;
-
-import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.clases.language.Language;
-import FrameWork_Dani.modulos.user.clases.Admin;
-import FrameWork_Dani.modulos.user.clases.Cliente;
-import FrameWork_Dani.modulos.user.clases.Normal;
-import FrameWork_Dani.modulos.user.clases.Singleton;
-import FrameWork_Dani.modulos.user.utils.Functions_find;
-import FrameWork_Dani.modulos.user.utils.Functions_user;
+import FrameWork_Dani.modulos.user.utils.Functions_user_dummies;
 
 public class Functions_create_dummies {
 	
 	public static void createNormal(){
-		int location = -1;
-		Normal normal= (Normal) Functions_user.CreateUser_dni(0);
-		location = Functions_find.find_normal((Normal) normal);
-		
-		if (location != -1) {
-			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("si_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
-		} else {
-			normal=(Normal) Functions_user.CreateUser_Generic(0,Settings.getInstance().fechaForm);
-			Singleton.userNormal.add((Normal) normal);
-		}
+		Functions_user_dummies.CreateUser_Generic(0);
 	}
 
 	public static void createClient(){
-		int location = -1;
-		Cliente cliente= (Cliente) Functions_user.CreateUser_dni(1);
-		location = Functions_find.find_client((Cliente) cliente);
-		
-		if (location != -1) {
-			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("si_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
-		} else {
-			cliente=(Cliente) Functions_user.CreateUser_Generic(1,Settings.getInstance().fechaForm);
-			Singleton.userCliente.add((Cliente) cliente);
-		}
+		Functions_user_dummies.CreateUser_Generic(1);
 	}
 	
 	public static void createAdmin(){
-		int location = -1;
-		Admin admin= (Admin) Functions_user.CreateUser_dni(2);
-		location = Functions_find.find_admin((Admin) admin);
-		
-		if (location != -1) {
-			JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("si_user"), Language.getInstance().getProperty("error"), JOptionPane.ERROR_MESSAGE);
-		} else {
-			admin=(Admin) Functions_user.CreateUser_Generic(2,Settings.getInstance().fechaForm);
-			Singleton.userAdmin.add((Admin) admin);
-		}
+		Functions_user_dummies.CreateUser_Generic(2);
 	}
-	
-	
 }
