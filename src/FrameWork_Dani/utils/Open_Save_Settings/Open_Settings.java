@@ -38,7 +38,7 @@ public class Open_Settings {
 	        Settings.getInstance().setFechaForm(settings.getFechaForm());
 	        Settings.getInstance().setLanguage(settings.getLanguage());
 	        Settings.getInstance().setSaveFormat(settings.getSaveFormat());
-	        //Settings.getInstance().setTheme(config.getTheme());
+	        Settings.getInstance().setTheme(settings.getTheme());
 	        
         } catch (Exception e) {
         	JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("error_settings"));

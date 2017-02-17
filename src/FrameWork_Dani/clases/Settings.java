@@ -13,6 +13,7 @@ import FrameWork_Dani.modulos.user.clases.Cliente;
 import FrameWork_Dani.modulos.user.clases.Normal;
 import FrameWork_Dani.modulos.user.clases.Singleton;
 import FrameWork_Dani.utils.Format;
+import FrameWork_Dani.utils.Functions_theme;
 import FrameWork_Dani.utils.Open_Save_Settings.Open_Settings;
 import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
 
@@ -29,6 +30,8 @@ public class Settings implements Serializable {
 	public String language;
 	@XStreamAlias("saveFormat")
 	public String saveFormat;
+	@XStreamAlias("theme")
+	public String theme;
 	@XStreamAlias("instance")
 	public static Settings instance;
 	
@@ -38,15 +41,16 @@ public class Settings implements Serializable {
 		fechaForm="dd/mm/yyyy";
 		language="English";
 		saveFormat="TXT";
+		theme="METAL";
 	}
 	
 	public static Settings getInstance () {
 		if (instance == null){
 			instance = new Settings ();
 			Open_Settings.OpenJsonSettings();
-
+			Functions_theme.theme();
 			Language.getInstance();
-
+			
 			Singleton.userNormal=new ArrayList <Normal> ();
 			Singleton.userCliente = new ArrayList <Cliente> ();
 			Singleton.userAdmin = new ArrayList <Admin> ();			
@@ -94,4 +98,11 @@ public class Settings implements Serializable {
 		saveFormat = ValueSaveFormat;
 	}
 
+	public String getTheme() {
+		return theme;
+	}
+
+	public void setTheme(String ValueTheme) {
+		theme = ValueTheme;
+	}
 }

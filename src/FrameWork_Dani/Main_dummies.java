@@ -1,6 +1,5 @@
 package FrameWork_Dani;
 
-
 import javax.swing.JOptionPane;
 import FrameWork_Dani.clases.Fecha;
 import FrameWork_Dani.clases.Settings;
@@ -36,7 +35,7 @@ public class Main_dummies {
 					 Language.getInstance().getProperty("settings"),Language.getInstance().getProperty("exit") };
 			String setting[] = {Language.getInstance().getProperty("date_format"),Language.getInstance().getProperty("currency"),Language.getInstance().getProperty("decimal"),
 					Language.getInstance().getProperty("language"),Language.getInstance().getProperty("noDummies"),Language.getInstance().getProperty("save_format"),
-					Language.getInstance().getProperty("back")};
+					Language.getInstance().getProperty("theme"),Language.getInstance().getProperty("back")};
 					
 			opt = Functions.MenuP(options);
 			if (opt == -1) {
@@ -186,12 +185,15 @@ public class Main_dummies {
 								Format.SaveFormat();
 								break;
 							case 6:
+								Format.theme();
+								break;
+							case 7:
 								Save_Settings.SaveJsonSettings();
 								break;
 							}
 						}
 
-					} while (opt2 != 6);
+					} while (opt2 != 7);
 					break;
 					
 				case 4:

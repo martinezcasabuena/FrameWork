@@ -18,7 +18,7 @@ public class Functions_dummies {
         Random random = new Random(time);
         while (cad.length() < 8) {
             char c = (char) random.nextInt(255);
-            if ((c >= '0' && c <= '9')) {
+            if ((c >= '1' && c <= '9')) {
                 cad += c;
             }
         }
@@ -105,7 +105,7 @@ public class Functions_dummies {
 		 String [] sex = {"H", "M"};
 	     Random random = new Random();
 	     int select = random.nextInt(sex.length); 
-	
+	     
 	     return sex[select];
 	}
 	
@@ -212,42 +212,8 @@ public class Functions_dummies {
 		return (int) Math.rint(activity * 100) / 100;
 	}
 	
-	/* Client
-	 * 
-	 */
 	public static int shopping (){
 		float shopping = (int) (Math.random() * (50 - 1000) + 1000);
 		return (int) Math.rint(shopping * 100) / 100;
 	}
-	
-	
-	
-	/* BUILDER
-	 * 
-	 */
-	/*
-	public static void makedummies_admin () {
-		for (int i=0; i<5; i++) {
-			
-			Admin admin = new Admin (DNI(), name(), surname(), email(), mobilephone());
-			Singleton.useradmin.add(a1);
-		}
-	}
-	
-	public static void makedummies_client () {
-		for (int i=0; i<5; i++) {
-			Client c1 = new Client(DNI(), user(), pass(), avatar(), state(), name(), surname(), email(), mobilephone(),
-					datebirthday(), shopping(), dtos(), premium(), typeclient());
-			Singleton.userclient.add(c1);
-		}
-	}
-	
-	public static void makedummies_userregister () {
-		for (int i=0; i<5; i++) {
-			User_register u1 = new User_register(DNI(), user(), pass(), avatar(), state(), name(), surname(),
-					email(), mobilephone(), datebirthday(), movement(), point());
-			Singleton.userregister.add(u1);
-		}
-	}
-	*/
 }

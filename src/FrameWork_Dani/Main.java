@@ -23,7 +23,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		int opt = 0, opt1 = 0,opt2 = 0;
-
+		
 		Settings.getInstance();
 		
 		do {
@@ -31,7 +31,7 @@ public class Main {
 					 Language.getInstance().getProperty("settings"),Language.getInstance().getProperty("exit") };
 			String setting[] = {Language.getInstance().getProperty("date_format"),Language.getInstance().getProperty("currency"),Language.getInstance().getProperty("decimal"),
 					Language.getInstance().getProperty("language"),Language.getInstance().getProperty("dummies"),Language.getInstance().getProperty("save_format"),
-					Language.getInstance().getProperty("back")};
+					Language.getInstance().getProperty("theme"),Language.getInstance().getProperty("back")};
 					
 			opt = Functions.MenuP(options);
 			if (opt == -1) {
@@ -181,12 +181,15 @@ public class Main {
 								Format.SaveFormat();
 								break;
 							case 6:
+								Format.theme();
+								break;
+							case 7:
 								Save_Settings.SaveJsonSettings();
 								break;
 							}
 						}
 						
-					} while (opt2 != 6);
+					} while (opt2 != 7);
 					break;
 					
 				case 4:
