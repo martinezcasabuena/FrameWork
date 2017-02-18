@@ -11,10 +11,11 @@ public class Format {
 	public static String saveFormat=Settings.getInstance().getSaveFormat();
 	
 	public static void CurrencyFormat(){
-		String opt="";
+		String opt = Settings.getInstance().getCurrency();
     	String currencyOpt[] = {"€","$","£"};
     	
-    	opt= Functions.ComboMenu(currencyOpt,Language.getInstance().getProperty("currency_message"),Language.getInstance().getProperty("currency"));
+    	opt= Functions.ComboMenuFormats(currencyOpt,Language.getInstance().getProperty("currency_message"),
+    			Language.getInstance().getProperty("currency"),opt);
     	switch (opt) {
     	case "€":
     		currency="€";
@@ -33,7 +34,8 @@ public class Format {
 		String opt="";
 		String decimalOpt[]={"1","2","3"};
 		
-		opt=Functions.ComboMenu(decimalOpt,Language.getInstance().getProperty("decimal_message"),Language.getInstance().getProperty("decimal"));
+		opt=Functions.ComboMenuFormats(decimalOpt,Language.getInstance().getProperty("decimal_message"),
+				Language.getInstance().getProperty("decimal"),opt);
 		switch(opt){
 		case "1":
 			decimal=1;
@@ -65,9 +67,10 @@ public class Format {
 	}
 	
 	public static void SaveFormat(){
-		String opt="";
+		String opt = Settings.getInstance().getSaveFormat();
     	String saveFormatOpt[] = {"TXT","XML","JSON"};
-    	opt= Functions.ComboMenu(saveFormatOpt,Language.getInstance().getProperty("save_message"),Language.getInstance().getProperty("save_format"));
+    	opt= Functions.ComboMenuFormats(saveFormatOpt,Language.getInstance().getProperty("save_message"),
+    			Language.getInstance().getProperty("save_format"),opt);
     	
     	switch (opt) {
 		case "TXT":
@@ -84,9 +87,10 @@ public class Format {
 	}
 	
 	public static void theme () {
-		String [] options = { "METAL", "GTK", "MOTIF", "NINBUS", "WINDOWS95", "WINDOWS", "MAC OS", "MAC OS X" };
-		String opt = "";
-		opt=Functions.ComboMenu(options, "Elige un tema", "Tema");
+		String [] options = { "METAL", "GTK", "MOTIF", "NINBUS", "WINDOWS95", "WINDOWS" };
+		String opt = Settings.getInstance().getTheme();
+		opt=Functions.ComboMenuFormats(options, Language.getInstance().getProperty("choose_theme"),
+				Language.getInstance().getProperty("theme"),opt);
 		switch (opt){
 			case "METAL":// Metal - Predeterminado JAVA
 				Settings.getInstance().setTheme("METAL");
@@ -115,16 +119,6 @@ public class Format {
 				
 			case "WINDOWS":// WINDOWS
 				Settings.getInstance().setTheme("WINDOWS");
-				Functions_theme.theme();
-				break;
-				
-			case "MAC OS":// MAC OS
-				Settings.getInstance().setTheme("MAC OS");
-				Functions_theme.theme();
-				break;
-				
-			case "MAC OS X":// MAC OS X
-				Settings.getInstance().setTheme("MAC OS X");
 				Functions_theme.theme();
 				break;
 		}

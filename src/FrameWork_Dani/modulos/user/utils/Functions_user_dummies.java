@@ -32,6 +32,7 @@ public class Functions_user_dummies {
 	public static User CreateUser_Generic(int i){
 		User user=null;
 		if(i==0){
+			Singleton.userNormal.clear();
 			for (int j=0; j<5; j++) {
 				user=new Normal();
 				user.setNom(Functions_dummies.name());
@@ -46,6 +47,7 @@ public class Functions_user_dummies {
 			}
 		}else
 		if(i==1){
+			Singleton.userCliente.clear();
 			for (int j=0; j<5; j++) {
 				user=new Cliente();
 				user.setNom(Functions_dummies.name());
@@ -60,6 +62,7 @@ public class Functions_user_dummies {
 			}
 		}else
 		if(i==2){
+			Singleton.userAdmin.clear();
 			for (int j=0; j<5; j++) {
 				user=new Admin();
 				user.setNom(Functions_dummies.name());
@@ -67,7 +70,7 @@ public class Functions_user_dummies {
 				user.setSexe(Functions_dummies.sex());
 				user.setFechaNac(Functions_dummies.datebirthday());
 				user.setDni(Functions_dummies.DNI());
-				((Admin)user).setFechaCont(Functions_dummies.datecontract());
+				((Admin)user).setFechaCont(Functions_dummies.datecontract(user.getFechaNac()));
 				((Admin)user).setTrabajo(Functions_dummies.Job());
 				Singleton.userAdmin.add((Admin) user);
 			}

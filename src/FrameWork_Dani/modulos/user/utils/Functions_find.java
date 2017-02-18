@@ -79,7 +79,8 @@ public class Functions_find {
 		Admin a1 = null;
 		String ID = "";
 		String [] admin = generate_vector_admin ();
-		String search = Functions.ComboMenu(admin,Language.getInstance().getProperty("select_user"), Language.getInstance().getProperty("read_user"));
+		String search = Functions.ComboMenu(admin,Language.getInstance().getProperty("select_user"),
+				Language.getInstance().getProperty("read_user"));
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);

@@ -166,11 +166,12 @@ public class Functions {
 	
 	//******** Combo Menu *******//
 	
-	public static String ComboMenu(String options[],String message,String title){
+	//Combo menu para todos los selectores de formatos como el formato de fecha, moneda, decimales, idioma,etc.
+	public static String ComboMenuFormats(String options[],String message,String title,String selectedOption){
 		String option="";
 		boolean correct=false;		
 		do{
-			Object opt4 =JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null, options, 0);
+			Object opt4 =JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null, options,selectedOption);
 			if(opt4==null){
 				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("choose_opt"),Language.getInstance().getProperty("error"),JOptionPane.ERROR_MESSAGE);
 				correct=false;
@@ -181,9 +182,21 @@ public class Functions {
 		}while(correct==false);	
 		return option;
 	}
-
 	
-
+	public static String ComboMenu(String options[],String message,String title){
+		String option="";
+		boolean correct=false;		
+		do{
+			Object opt4 =JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null, options,0);
+			if(opt4==null){
+				JOptionPane.showMessageDialog(null,Language.getInstance().getProperty("choose_opt"),Language.getInstance().getProperty("error"),JOptionPane.ERROR_MESSAGE);
+				correct=false;
+			}else{
+				option=(String) opt4;
+				correct=true;
+			}
+		}while(correct==false);	
+		return option;
+	}
 	
-
 }

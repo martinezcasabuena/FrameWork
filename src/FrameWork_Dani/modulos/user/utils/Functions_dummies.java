@@ -1,5 +1,7 @@
 package FrameWork_Dani.modulos.user.utils;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Random;
 
 import FrameWork_Dani.clases.Fecha;
@@ -143,16 +145,14 @@ public class Functions_dummies {
         return nAccount;
 	}
 	
-	public static Fecha datebirthday (){
+	public static Fecha datebirthday (){		
 		String fechaform=Settings.getInstance().getFechaForm();
-		String [] years = {"19", "20"};
 		String fecha="";
+		Calendar date = new GregorianCalendar();
+		int anyoactual = date.get(Calendar.YEAR);
 		int day = (int) (Math.random() * (1 - 31) + 31);
 		int month = (int) (Math.random() * (1 - 12) + 12);
-		int year3 = (int) (Math.random() * (0 - 99) + 99);
-		int position = (int) (Math.random() * 222) % 2;
-		String year2 = years[position]+year3;
-		int year = Integer.parseInt(year2);
+		int year = (int) (Math.random() * (1920 - (anyoactual-18)) + (anyoactual-18));
 		switch (fechaform) {
 		case "dd/mm/yyyy":
 			fecha=day+"/"+month+"/"+year;
@@ -172,16 +172,20 @@ public class Functions_dummies {
 		
 	}
 	
-	public static Fecha datecontract (){
+	public static Fecha datecontract (Fecha fnac){
+		String fnacString=fnac.toString(); //Convertimos la fecha de nacimiento al formato dd/mm/yyyy
 		String fechaform=Settings.getInstance().getFechaForm();
-		String [] years = {"19", "20"};
 		String fecha="";
+		Calendar date = new GregorianCalendar();
+		String[] SplitArray=null;
+		int añoNacimiento=0;
+		SplitArray = fnacString.split("/");
+		añoNacimiento=Integer.parseInt(SplitArray [2]); //Obtenemos el año de la fecha de nacimiento haciendo un SplitArray de "/" 
+
+		int anyoactual = date.get(Calendar.YEAR);
 		int day = (int) (Math.random() * (1 - 31) + 31);
 		int month = (int) (Math.random() * (1 - 12) + 12);
-		int year3 = (int) (Math.random() * (0 - 99) + 99);
-		int position = (int) (Math.random() * 222) % 2;
-		String year2 = years[position]+year3;
-		int year = Integer.parseInt(year2);
+		int year = (int) (Math.random() * ((añoNacimiento+18) - anyoactual) + anyoactual);
 		switch (fechaform) {
 		case "dd/mm/yyyy":
 			fecha=day+"/"+month+"/"+year;

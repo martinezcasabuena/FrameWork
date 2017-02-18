@@ -272,10 +272,11 @@ public class Fecha implements Serializable{
 		}
 	    
 	    public static String fechaForm(){
-	    	String opt="";
+	    	String opt=Settings.getInstance().getFechaForm();
 	    	String formatDate[] = {"dd/mm/yyyy","dd-mm-yyyy","yyyy/mm/dd","yyyy-mm-dd"};
 	    	
-	    	opt= Functions.ComboMenu(formatDate,Language.getInstance().getProperty("date_message"),Language.getInstance().getProperty("date_format"));
+	    	opt= Functions.ComboMenuFormats(formatDate,Language.getInstance().getProperty("date_message"),
+	    			Language.getInstance().getProperty("date_format"),opt);
 	    	switch (opt) {
 	    	case "dd/mm/yyyy":
 	    		fechaForm = "dd/mm/yyyy";

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="null"?>
 <list>
   <admin>
-    <nom>sara</nom>
-    <adreca>Avd boluda</adreca>
-    <edad>1812</edad>
-    <sexe>H</sexe>
-    <dni>41465138W</dni>
+    <nom>daniel</nom>
+    <adreca>Avd bas</adreca>
+    <edad>36</edad>
+    <sexe>M</sexe>
+    <dni>16152724P</dni>
     <fnac>
-      <fecha>205/4/8</fecha>
-      <day>8</day>
-      <month>4</month>
-      <year>205</year>
+      <fecha>1/9/1981</fecha>
+      <day>1</day>
+      <month>9</month>
+      <year>1981</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258469886</time>
+              <time>-1037176831246</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -87,7 +87,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.114 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.754 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -5440,22 +5440,22 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
     </fnac>
-    <trabajo>Designer</trabajo>
+    <trabajo>Hardware Expert</trabajo>
     <fcont>
-      <fecha>1986/7/25</fecha>
-      <day>25</day>
-      <month>7</month>
-      <year>1986</year>
+      <fecha>10/8/2011</fecha>
+      <day>10</day>
+      <month>8</month>
+      <year>2011</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258469885</time>
+              <time>-1037176831246</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -5527,7 +5527,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.115 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.754 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -5596,2113 +5596,31 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../../../fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
     </fcont>
-    <antig>31</antig>
-    <sueldo>1626,6</sueldo>
+    <antig>6</antig>
+    <sueldo>1496,472</sueldo>
     <decimal>0</decimal>
   </admin>
   <admin>
-    <nom>daniel</nom>
-    <adreca>Avd aliaga</adreca>
-    <edad>68</edad>
+    <nom>felipe</nom>
+    <adreca>Avd camarena</adreca>
+    <edad>25</edad>
     <sexe>H</sexe>
-    <dni>24395334Q</dni>
+    <dni>29129169Z</dni>
     <fnac>
-      <fecha>1949/8/18</fecha>
-      <day>18</day>
-      <month>8</month>
-      <year>1949</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469885</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.115 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Engineer</trabajo>
-    <fcont>
-      <fecha>1930/9/14</fecha>
-      <day>14</day>
-      <month>9</month>
-      <year>1930</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469883</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.117 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fcont>
-    <antig>87</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>sara</nom>
-    <adreca>Avd doria</adreca>
-    <edad>91</edad>
-    <sexe>M</sexe>
-    <dni>25987674C</dni>
-    <fnac>
-      <fecha>1926/3/29</fecha>
-      <day>29</day>
-      <month>3</month>
-      <year>1926</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469883</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.117 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Programmer</trabajo>
-    <fcont>
-      <fecha>1927/11/3</fecha>
-      <day>3</day>
-      <month>11</month>
-      <year>1927</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469882</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.118 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fcont>
-    <antig>90</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>jaume</nom>
-    <adreca>Avd boluda</adreca>
-    <edad>83</edad>
-    <sexe>M</sexe>
-    <dni>32179628Y</dni>
-    <fnac>
-      <fecha>1934/9/6</fecha>
-      <day>6</day>
-      <month>9</month>
-      <year>1934</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469882</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.118 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Analyst</trabajo>
-    <fcont>
-      <fecha>1929/6/18</fecha>
-      <day>18</day>
-      <month>6</month>
-      <year>1929</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469882</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.118 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fcont>
-    <antig>88</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>walter</nom>
-    <adreca>Calle cucart</adreca>
-    <edad>-62</edad>
-    <sexe>M</sexe>
-    <dni>32179628Y</dni>
-    <fnac>
-      <fecha>2079/6/9</fecha>
-      <day>9</day>
-      <month>6</month>
-      <year>2079</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469882</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.118 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Teacher</trabajo>
-    <fcont>
-      <fecha>1974/10/10</fecha>
-      <day>10</day>
-      <month>10</month>
-      <year>1974</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258469882</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:38:50.118 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fcont>
-    <antig>43</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>jaume</nom>
-    <adreca>Avd boluda</adreca>
-    <edad>97</edad>
-    <sexe>H</sexe>
-    <dni>63659456X</dni>
-    <fnac>
-      <fecha>1920/5/14</fecha>
-      <day>14</day>
-      <month>5</month>
-      <year>1920</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258346910</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.90 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Designer</trabajo>
-    <fcont>
-      <fecha>1951/4/22</fecha>
-      <day>22</day>
-      <month>4</month>
-      <year>1951</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258346910</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.90 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fcont>
-    <antig>66</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>joan</nom>
-    <adreca>Avd ferrero</adreca>
-    <edad>91</edad>
-    <sexe>M</sexe>
-    <dni>63659456X</dni>
-    <fnac>
-      <fecha>1926/5/1</fecha>
-      <day>1</day>
-      <month>5</month>
-      <year>1926</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258346910</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.90 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Programmer</trabajo>
-    <fcont>
-      <fecha>1911/7/3</fecha>
-      <day>3</day>
-      <month>7</month>
-      <year>1911</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258346910</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.90 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fcont>
-    <antig>106</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>jaume</nom>
-    <adreca>Calle bataller</adreca>
-    <edad>82</edad>
-    <sexe>M</sexe>
-    <dni>18732166T</dni>
-    <fnac>
-      <fecha>1935/6/28</fecha>
-      <day>28</day>
-      <month>6</month>
-      <year>1935</year>
-      <formato serialization="custom">
-        <java.text.DateFormat>
-          <default>
-            <calendar>
-              <time>-1037258346909</time>
-              <timezone>Europe/Paris</timezone>
-            </calendar>
-            <numberFormat class="java.text.DecimalFormat" serialization="custom">
-              <java.text.NumberFormat>
-                <default>
-                  <groupingUsed>false</groupingUsed>
-                  <maxFractionDigits>0</maxFractionDigits>
-                  <maxIntegerDigits>127</maxIntegerDigits>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>309</maximumIntegerDigits>
-                  <minFractionDigits>0</minFractionDigits>
-                  <minIntegerDigits>1</minIntegerDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <parseIntegerOnly>true</parseIntegerOnly>
-                  <serialVersionOnStream>1</serialVersionOnStream>
-                </default>
-              </java.text.NumberFormat>
-              <java.text.DecimalFormat>
-                <default>
-                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
-                  <groupingSize>3</groupingSize>
-                  <maximumFractionDigits>0</maximumFractionDigits>
-                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
-                  <minExponentDigits>0</minExponentDigits>
-                  <minimumFractionDigits>0</minimumFractionDigits>
-                  <minimumIntegerDigits>1</minimumIntegerDigits>
-                  <multiplier>1</multiplier>
-                  <parseBigDecimal>false</parseBigDecimal>
-                  <serialVersionOnStream>4</serialVersionOnStream>
-                  <useExponentialNotation>false</useExponentialNotation>
-                  <negPrefixPattern>&apos;-</negPrefixPattern>
-                  <negSuffixPattern></negSuffixPattern>
-                  <negativePrefix>-</negativePrefix>
-                  <negativeSuffix></negativeSuffix>
-                  <posPrefixPattern></posPrefixPattern>
-                  <posSuffixPattern></posSuffixPattern>
-                  <positivePrefix></positivePrefix>
-                  <positiveSuffix></positiveSuffix>
-                  <roundingMode>HALF_EVEN</roundingMode>
-                  <symbols serialization="custom">
-                    <java.text.DecimalFormatSymbols>
-                      <default>
-                        <decimalSeparator>,</decimalSeparator>
-                        <digit>#</digit>
-                        <exponential>E</exponential>
-                        <groupingSeparator>.</groupingSeparator>
-                        <minusSign>-</minusSign>
-                        <monetarySeparator>,</monetarySeparator>
-                        <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
-                        <percent>%</percent>
-                        <serialVersionOnStream>3</serialVersionOnStream>
-                        <zeroDigit>0</zeroDigit>
-                        <NaN>�</NaN>
-                        <currencySymbol>€</currencySymbol>
-                        <exponentialSeparator>E</exponentialSeparator>
-                        <infinity>∞</infinity>
-                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
-                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                      </default>
-                    </java.text.DecimalFormatSymbols>
-                  </symbols>
-                </default>
-              </java.text.DecimalFormat>
-            </numberFormat>
-          </default>
-        </java.text.DateFormat>
-        <java.text.SimpleDateFormat>
-          <default>
-            <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.91 CET</defaultCenturyStart>
-            <formatData serialization="custom">
-              <java.text.DateFormatSymbols>
-                <default>
-                  <ampms>
-                    <string>AM</string>
-                    <string>PM</string>
-                  </ampms>
-                  <eras>
-                    <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
-                  </eras>
-                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
-                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-                  <months>
-                    <string>enero</string>
-                    <string>febrero</string>
-                    <string>marzo</string>
-                    <string>abril</string>
-                    <string>mayo</string>
-                    <string>junio</string>
-                    <string>julio</string>
-                    <string>agosto</string>
-                    <string>septiembre</string>
-                    <string>octubre</string>
-                    <string>noviembre</string>
-                    <string>diciembre</string>
-                    <string></string>
-                  </months>
-                  <shortMonths>
-                    <string>ene</string>
-                    <string>feb</string>
-                    <string>mar</string>
-                    <string>abr</string>
-                    <string>may</string>
-                    <string>jun</string>
-                    <string>jul</string>
-                    <string>ago</string>
-                    <string>sep</string>
-                    <string>oct</string>
-                    <string>nov</string>
-                    <string>dic</string>
-                    <string></string>
-                  </shortMonths>
-                  <shortWeekdays>
-                    <string></string>
-                    <string>dom</string>
-                    <string>lun</string>
-                    <string>mar</string>
-                    <string>mié</string>
-                    <string>jue</string>
-                    <string>vie</string>
-                    <string>sáb</string>
-                  </shortWeekdays>
-                  <weekdays>
-                    <string></string>
-                    <string>domingo</string>
-                    <string>lunes</string>
-                    <string>martes</string>
-                    <string>miércoles</string>
-                    <string>jueves</string>
-                    <string>viernes</string>
-                    <string>sábado</string>
-                  </weekdays>
-                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
-                </default>
-              </java.text.DateFormatSymbols>
-            </formatData>
-            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
-          </default>
-        </java.text.SimpleDateFormat>
-      </formato>
-    </fnac>
-    <trabajo>Designer</trabajo>
-    <fcont>
-      <fecha>1992/10/28</fecha>
-      <day>28</day>
-      <month>10</month>
+      <fecha>24/2/1992</fecha>
+      <day>24</day>
+      <month>2</month>
       <year>1992</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258346909</time>
+              <time>-1037176831245</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -7774,7 +5692,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.91 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.755 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -7843,31 +5761,22 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
-    </fcont>
-    <antig>25</antig>
-    <sueldo>1626,6</sueldo>
-    <decimal>0</decimal>
-  </admin>
-  <admin>
-    <nom>jaume</nom>
-    <adreca>Avd bas</adreca>
-    <edad>49</edad>
-    <sexe>H</sexe>
-    <dni>61543829S</dni>
-    <fnac>
-      <fecha>1968/9/24</fecha>
-      <day>24</day>
-      <month>9</month>
-      <year>1968</year>
+    </fnac>
+    <trabajo>Software Expert</trabajo>
+    <fcont>
+      <fecha>21/10/2016</fecha>
+      <day>21</day>
+      <month>10</month>
+      <year>2016</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258346908</time>
+              <time>-1037176831245</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -7939,7 +5848,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.92 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.755 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -8008,22 +5917,508 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
+          </default>
+        </java.text.SimpleDateFormat>
+      </formato>
+    </fcont>
+    <antig>1</antig>
+    <sueldo>1062,712</sueldo>
+    <decimal>0</decimal>
+  </admin>
+  <admin>
+    <nom>pepa</nom>
+    <adreca>Calle bataller</adreca>
+    <edad>45</edad>
+    <sexe>M</sexe>
+    <dni>29129169Z</dni>
+    <fnac>
+      <fecha>27/6/1972</fecha>
+      <day>27</day>
+      <month>6</month>
+      <year>1972</year>
+      <formato serialization="custom">
+        <java.text.DateFormat>
+          <default>
+            <calendar>
+              <time>-1037176831245</time>
+              <timezone>Europe/Paris</timezone>
+            </calendar>
+            <numberFormat class="java.text.DecimalFormat" serialization="custom">
+              <java.text.NumberFormat>
+                <default>
+                  <groupingUsed>false</groupingUsed>
+                  <maxFractionDigits>0</maxFractionDigits>
+                  <maxIntegerDigits>127</maxIntegerDigits>
+                  <maximumFractionDigits>0</maximumFractionDigits>
+                  <maximumIntegerDigits>309</maximumIntegerDigits>
+                  <minFractionDigits>0</minFractionDigits>
+                  <minIntegerDigits>1</minIntegerDigits>
+                  <minimumFractionDigits>0</minimumFractionDigits>
+                  <minimumIntegerDigits>1</minimumIntegerDigits>
+                  <parseIntegerOnly>true</parseIntegerOnly>
+                  <serialVersionOnStream>1</serialVersionOnStream>
+                </default>
+              </java.text.NumberFormat>
+              <java.text.DecimalFormat>
+                <default>
+                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
+                  <groupingSize>3</groupingSize>
+                  <maximumFractionDigits>0</maximumFractionDigits>
+                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
+                  <minExponentDigits>0</minExponentDigits>
+                  <minimumFractionDigits>0</minimumFractionDigits>
+                  <minimumIntegerDigits>1</minimumIntegerDigits>
+                  <multiplier>1</multiplier>
+                  <parseBigDecimal>false</parseBigDecimal>
+                  <serialVersionOnStream>4</serialVersionOnStream>
+                  <useExponentialNotation>false</useExponentialNotation>
+                  <negPrefixPattern>&apos;-</negPrefixPattern>
+                  <negSuffixPattern></negSuffixPattern>
+                  <negativePrefix>-</negativePrefix>
+                  <negativeSuffix></negativeSuffix>
+                  <posPrefixPattern></posPrefixPattern>
+                  <posSuffixPattern></posSuffixPattern>
+                  <positivePrefix></positivePrefix>
+                  <positiveSuffix></positiveSuffix>
+                  <roundingMode>HALF_EVEN</roundingMode>
+                  <symbols serialization="custom">
+                    <java.text.DecimalFormatSymbols>
+                      <default>
+                        <decimalSeparator>,</decimalSeparator>
+                        <digit>#</digit>
+                        <exponential>E</exponential>
+                        <groupingSeparator>.</groupingSeparator>
+                        <minusSign>-</minusSign>
+                        <monetarySeparator>,</monetarySeparator>
+                        <patternSeparator>;</patternSeparator>
+                        <perMill>‰</perMill>
+                        <percent>%</percent>
+                        <serialVersionOnStream>3</serialVersionOnStream>
+                        <zeroDigit>0</zeroDigit>
+                        <NaN>�</NaN>
+                        <currencySymbol>€</currencySymbol>
+                        <exponentialSeparator>E</exponentialSeparator>
+                        <infinity>∞</infinity>
+                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
+                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+                      </default>
+                    </java.text.DecimalFormatSymbols>
+                  </symbols>
+                </default>
+              </java.text.DecimalFormat>
+            </numberFormat>
+          </default>
+        </java.text.DateFormat>
+        <java.text.SimpleDateFormat>
+          <default>
+            <serialVersionOnStream>1</serialVersionOnStream>
+            <defaultCenturyStart>1937-02-18 15:19:28.755 CET</defaultCenturyStart>
+            <formatData serialization="custom">
+              <java.text.DateFormatSymbols>
+                <default>
+                  <ampms>
+                    <string>AM</string>
+                    <string>PM</string>
+                  </ampms>
+                  <eras>
+                    <string>antes de Cristo</string>
+                    <string>anno Dómini</string>
+                  </eras>
+                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
+                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+                  <months>
+                    <string>enero</string>
+                    <string>febrero</string>
+                    <string>marzo</string>
+                    <string>abril</string>
+                    <string>mayo</string>
+                    <string>junio</string>
+                    <string>julio</string>
+                    <string>agosto</string>
+                    <string>septiembre</string>
+                    <string>octubre</string>
+                    <string>noviembre</string>
+                    <string>diciembre</string>
+                    <string></string>
+                  </months>
+                  <shortMonths>
+                    <string>ene</string>
+                    <string>feb</string>
+                    <string>mar</string>
+                    <string>abr</string>
+                    <string>may</string>
+                    <string>jun</string>
+                    <string>jul</string>
+                    <string>ago</string>
+                    <string>sep</string>
+                    <string>oct</string>
+                    <string>nov</string>
+                    <string>dic</string>
+                    <string></string>
+                  </shortMonths>
+                  <shortWeekdays>
+                    <string></string>
+                    <string>dom</string>
+                    <string>lun</string>
+                    <string>mar</string>
+                    <string>mié</string>
+                    <string>jue</string>
+                    <string>vie</string>
+                    <string>sáb</string>
+                  </shortWeekdays>
+                  <weekdays>
+                    <string></string>
+                    <string>domingo</string>
+                    <string>lunes</string>
+                    <string>martes</string>
+                    <string>miércoles</string>
+                    <string>jueves</string>
+                    <string>viernes</string>
+                    <string>sábado</string>
+                  </weekdays>
+                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
+                </default>
+              </java.text.DateFormatSymbols>
+            </formatData>
+            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+            <pattern>dd/mm/yyyy</pattern>
+          </default>
+        </java.text.SimpleDateFormat>
+      </formato>
+    </fnac>
+    <trabajo>Programmer</trabajo>
+    <fcont>
+      <fecha>6/6/2015</fecha>
+      <day>6</day>
+      <month>6</month>
+      <year>2015</year>
+      <formato serialization="custom">
+        <java.text.DateFormat>
+          <default>
+            <calendar>
+              <time>-1037176831245</time>
+              <timezone>Europe/Paris</timezone>
+            </calendar>
+            <numberFormat class="java.text.DecimalFormat" serialization="custom">
+              <java.text.NumberFormat>
+                <default>
+                  <groupingUsed>false</groupingUsed>
+                  <maxFractionDigits>0</maxFractionDigits>
+                  <maxIntegerDigits>127</maxIntegerDigits>
+                  <maximumFractionDigits>0</maximumFractionDigits>
+                  <maximumIntegerDigits>309</maximumIntegerDigits>
+                  <minFractionDigits>0</minFractionDigits>
+                  <minIntegerDigits>1</minIntegerDigits>
+                  <minimumFractionDigits>0</minimumFractionDigits>
+                  <minimumIntegerDigits>1</minimumIntegerDigits>
+                  <parseIntegerOnly>true</parseIntegerOnly>
+                  <serialVersionOnStream>1</serialVersionOnStream>
+                </default>
+              </java.text.NumberFormat>
+              <java.text.DecimalFormat>
+                <default>
+                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
+                  <groupingSize>3</groupingSize>
+                  <maximumFractionDigits>0</maximumFractionDigits>
+                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
+                  <minExponentDigits>0</minExponentDigits>
+                  <minimumFractionDigits>0</minimumFractionDigits>
+                  <minimumIntegerDigits>1</minimumIntegerDigits>
+                  <multiplier>1</multiplier>
+                  <parseBigDecimal>false</parseBigDecimal>
+                  <serialVersionOnStream>4</serialVersionOnStream>
+                  <useExponentialNotation>false</useExponentialNotation>
+                  <negPrefixPattern>&apos;-</negPrefixPattern>
+                  <negSuffixPattern></negSuffixPattern>
+                  <negativePrefix>-</negativePrefix>
+                  <negativeSuffix></negativeSuffix>
+                  <posPrefixPattern></posPrefixPattern>
+                  <posSuffixPattern></posSuffixPattern>
+                  <positivePrefix></positivePrefix>
+                  <positiveSuffix></positiveSuffix>
+                  <roundingMode>HALF_EVEN</roundingMode>
+                  <symbols serialization="custom">
+                    <java.text.DecimalFormatSymbols>
+                      <default>
+                        <decimalSeparator>,</decimalSeparator>
+                        <digit>#</digit>
+                        <exponential>E</exponential>
+                        <groupingSeparator>.</groupingSeparator>
+                        <minusSign>-</minusSign>
+                        <monetarySeparator>,</monetarySeparator>
+                        <patternSeparator>;</patternSeparator>
+                        <perMill>‰</perMill>
+                        <percent>%</percent>
+                        <serialVersionOnStream>3</serialVersionOnStream>
+                        <zeroDigit>0</zeroDigit>
+                        <NaN>�</NaN>
+                        <currencySymbol>€</currencySymbol>
+                        <exponentialSeparator>E</exponentialSeparator>
+                        <infinity>∞</infinity>
+                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
+                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+                      </default>
+                    </java.text.DecimalFormatSymbols>
+                  </symbols>
+                </default>
+              </java.text.DecimalFormat>
+            </numberFormat>
+          </default>
+        </java.text.DateFormat>
+        <java.text.SimpleDateFormat>
+          <default>
+            <serialVersionOnStream>1</serialVersionOnStream>
+            <defaultCenturyStart>1937-02-18 15:19:28.755 CET</defaultCenturyStart>
+            <formatData serialization="custom">
+              <java.text.DateFormatSymbols>
+                <default>
+                  <ampms>
+                    <string>AM</string>
+                    <string>PM</string>
+                  </ampms>
+                  <eras>
+                    <string>antes de Cristo</string>
+                    <string>anno Dómini</string>
+                  </eras>
+                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
+                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+                  <months>
+                    <string>enero</string>
+                    <string>febrero</string>
+                    <string>marzo</string>
+                    <string>abril</string>
+                    <string>mayo</string>
+                    <string>junio</string>
+                    <string>julio</string>
+                    <string>agosto</string>
+                    <string>septiembre</string>
+                    <string>octubre</string>
+                    <string>noviembre</string>
+                    <string>diciembre</string>
+                    <string></string>
+                  </months>
+                  <shortMonths>
+                    <string>ene</string>
+                    <string>feb</string>
+                    <string>mar</string>
+                    <string>abr</string>
+                    <string>may</string>
+                    <string>jun</string>
+                    <string>jul</string>
+                    <string>ago</string>
+                    <string>sep</string>
+                    <string>oct</string>
+                    <string>nov</string>
+                    <string>dic</string>
+                    <string></string>
+                  </shortMonths>
+                  <shortWeekdays>
+                    <string></string>
+                    <string>dom</string>
+                    <string>lun</string>
+                    <string>mar</string>
+                    <string>mié</string>
+                    <string>jue</string>
+                    <string>vie</string>
+                    <string>sáb</string>
+                  </shortWeekdays>
+                  <weekdays>
+                    <string></string>
+                    <string>domingo</string>
+                    <string>lunes</string>
+                    <string>martes</string>
+                    <string>miércoles</string>
+                    <string>jueves</string>
+                    <string>viernes</string>
+                    <string>sábado</string>
+                  </weekdays>
+                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
+                </default>
+              </java.text.DateFormatSymbols>
+            </formatData>
+            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+            <pattern>dd/mm/yyyy</pattern>
+          </default>
+        </java.text.SimpleDateFormat>
+      </formato>
+    </fcont>
+    <antig>2</antig>
+    <sueldo>1062,712</sueldo>
+    <decimal>0</decimal>
+  </admin>
+  <admin>
+    <nom>felipe</nom>
+    <adreca>cAvd onesa</adreca>
+    <edad>21</edad>
+    <sexe>M</sexe>
+    <dni>45454878R</dni>
+    <fnac>
+      <fecha>3/1/1996</fecha>
+      <day>3</day>
+      <month>1</month>
+      <year>1996</year>
+      <formato serialization="custom">
+        <java.text.DateFormat>
+          <default>
+            <calendar>
+              <time>-1037176831245</time>
+              <timezone>Europe/Paris</timezone>
+            </calendar>
+            <numberFormat class="java.text.DecimalFormat" serialization="custom">
+              <java.text.NumberFormat>
+                <default>
+                  <groupingUsed>false</groupingUsed>
+                  <maxFractionDigits>0</maxFractionDigits>
+                  <maxIntegerDigits>127</maxIntegerDigits>
+                  <maximumFractionDigits>0</maximumFractionDigits>
+                  <maximumIntegerDigits>309</maximumIntegerDigits>
+                  <minFractionDigits>0</minFractionDigits>
+                  <minIntegerDigits>1</minIntegerDigits>
+                  <minimumFractionDigits>0</minimumFractionDigits>
+                  <minimumIntegerDigits>1</minimumIntegerDigits>
+                  <parseIntegerOnly>true</parseIntegerOnly>
+                  <serialVersionOnStream>1</serialVersionOnStream>
+                </default>
+              </java.text.NumberFormat>
+              <java.text.DecimalFormat>
+                <default>
+                  <decimalSeparatorAlwaysShown>false</decimalSeparatorAlwaysShown>
+                  <groupingSize>3</groupingSize>
+                  <maximumFractionDigits>0</maximumFractionDigits>
+                  <maximumIntegerDigits>2147483647</maximumIntegerDigits>
+                  <minExponentDigits>0</minExponentDigits>
+                  <minimumFractionDigits>0</minimumFractionDigits>
+                  <minimumIntegerDigits>1</minimumIntegerDigits>
+                  <multiplier>1</multiplier>
+                  <parseBigDecimal>false</parseBigDecimal>
+                  <serialVersionOnStream>4</serialVersionOnStream>
+                  <useExponentialNotation>false</useExponentialNotation>
+                  <negPrefixPattern>&apos;-</negPrefixPattern>
+                  <negSuffixPattern></negSuffixPattern>
+                  <negativePrefix>-</negativePrefix>
+                  <negativeSuffix></negativeSuffix>
+                  <posPrefixPattern></posPrefixPattern>
+                  <posSuffixPattern></posSuffixPattern>
+                  <positivePrefix></positivePrefix>
+                  <positiveSuffix></positiveSuffix>
+                  <roundingMode>HALF_EVEN</roundingMode>
+                  <symbols serialization="custom">
+                    <java.text.DecimalFormatSymbols>
+                      <default>
+                        <decimalSeparator>,</decimalSeparator>
+                        <digit>#</digit>
+                        <exponential>E</exponential>
+                        <groupingSeparator>.</groupingSeparator>
+                        <minusSign>-</minusSign>
+                        <monetarySeparator>,</monetarySeparator>
+                        <patternSeparator>;</patternSeparator>
+                        <perMill>‰</perMill>
+                        <percent>%</percent>
+                        <serialVersionOnStream>3</serialVersionOnStream>
+                        <zeroDigit>0</zeroDigit>
+                        <NaN>�</NaN>
+                        <currencySymbol>€</currencySymbol>
+                        <exponentialSeparator>E</exponentialSeparator>
+                        <infinity>∞</infinity>
+                        <intlCurrencySymbol>EUR</intlCurrencySymbol>
+                        <locale reference="../../../../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+                      </default>
+                    </java.text.DecimalFormatSymbols>
+                  </symbols>
+                </default>
+              </java.text.DecimalFormat>
+            </numberFormat>
+          </default>
+        </java.text.DateFormat>
+        <java.text.SimpleDateFormat>
+          <default>
+            <serialVersionOnStream>1</serialVersionOnStream>
+            <defaultCenturyStart>1937-02-18 15:19:28.755 CET</defaultCenturyStart>
+            <formatData serialization="custom">
+              <java.text.DateFormatSymbols>
+                <default>
+                  <ampms>
+                    <string>AM</string>
+                    <string>PM</string>
+                  </ampms>
+                  <eras>
+                    <string>antes de Cristo</string>
+                    <string>anno Dómini</string>
+                  </eras>
+                  <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
+                  <locale reference="../../../../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+                  <months>
+                    <string>enero</string>
+                    <string>febrero</string>
+                    <string>marzo</string>
+                    <string>abril</string>
+                    <string>mayo</string>
+                    <string>junio</string>
+                    <string>julio</string>
+                    <string>agosto</string>
+                    <string>septiembre</string>
+                    <string>octubre</string>
+                    <string>noviembre</string>
+                    <string>diciembre</string>
+                    <string></string>
+                  </months>
+                  <shortMonths>
+                    <string>ene</string>
+                    <string>feb</string>
+                    <string>mar</string>
+                    <string>abr</string>
+                    <string>may</string>
+                    <string>jun</string>
+                    <string>jul</string>
+                    <string>ago</string>
+                    <string>sep</string>
+                    <string>oct</string>
+                    <string>nov</string>
+                    <string>dic</string>
+                    <string></string>
+                  </shortMonths>
+                  <shortWeekdays>
+                    <string></string>
+                    <string>dom</string>
+                    <string>lun</string>
+                    <string>mar</string>
+                    <string>mié</string>
+                    <string>jue</string>
+                    <string>vie</string>
+                    <string>sáb</string>
+                  </shortWeekdays>
+                  <weekdays>
+                    <string></string>
+                    <string>domingo</string>
+                    <string>lunes</string>
+                    <string>martes</string>
+                    <string>miércoles</string>
+                    <string>jueves</string>
+                    <string>viernes</string>
+                    <string>sábado</string>
+                  </weekdays>
+                  <zoneStrings reference="../../../../../../../../../admin/fnac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
+                </default>
+              </java.text.DateFormatSymbols>
+            </formatData>
+            <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
     </fnac>
     <trabajo>Tester</trabajo>
     <fcont>
-      <fecha>206/7/19</fecha>
-      <day>19</day>
-      <month>7</month>
-      <year>206</year>
+      <fecha>20/9/2016</fecha>
+      <day>20</day>
+      <month>9</month>
+      <year>2016</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258346907</time>
+              <time>-1037176831244</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -8095,7 +6490,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.93 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.756 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -8164,31 +6559,31 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
     </fcont>
-    <antig>1811</antig>
-    <sueldo>1626,6</sueldo>
+    <antig>1</antig>
+    <sueldo>1062,712</sueldo>
     <decimal>0</decimal>
   </admin>
   <admin>
-    <nom>vicent</nom>
-    <adreca>Avd camarena</adreca>
-    <edad>42</edad>
-    <sexe>H</sexe>
-    <dni>76569819J</dni>
+    <nom>pepa</nom>
+    <adreca>Calle bataller</adreca>
+    <edad>81</edad>
+    <sexe>M</sexe>
+    <dni>45454878R</dni>
     <fnac>
-      <fecha>1975/1/9</fecha>
-      <day>9</day>
-      <month>1</month>
-      <year>1975</year>
+      <fecha>5/4/1936</fecha>
+      <day>5</day>
+      <month>4</month>
+      <year>1936</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258346907</time>
+              <time>-1037176831244</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -8260,7 +6655,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.93 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.756 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -8329,22 +6724,22 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
     </fnac>
-    <trabajo>Teacher</trabajo>
+    <trabajo>Programmer</trabajo>
     <fcont>
-      <fecha>192/8/22</fecha>
-      <day>22</day>
-      <month>8</month>
-      <year>192</year>
+      <fecha>10/10/1979</fecha>
+      <day>10</day>
+      <month>10</month>
+      <year>1979</year>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
             <calendar>
-              <time>-1037258346906</time>
+              <time>-1037176831244</time>
               <timezone>Europe/Paris</timezone>
             </calendar>
             <numberFormat class="java.text.DecimalFormat" serialization="custom">
@@ -8416,7 +6811,7 @@
         <java.text.SimpleDateFormat>
           <default>
             <serialVersionOnStream>1</serialVersionOnStream>
-            <defaultCenturyStart>1937-02-17 16:40:53.94 CET</defaultCenturyStart>
+            <defaultCenturyStart>1937-02-18 15:19:28.756 CET</defaultCenturyStart>
             <formatData serialization="custom">
               <java.text.DateFormatSymbols>
                 <default>
@@ -8485,13 +6880,13 @@
               </java.text.DateFormatSymbols>
             </formatData>
             <locale reference="../../../../../../admin/fnac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
-            <pattern>yyyy/mm/dd</pattern>
+            <pattern>dd/mm/yyyy</pattern>
           </default>
         </java.text.SimpleDateFormat>
       </formato>
     </fcont>
-    <antig>1825</antig>
-    <sueldo>1626,6</sueldo>
+    <antig>38</antig>
+    <sueldo>1626,600</sueldo>
     <decimal>0</decimal>
   </admin>
 </list>

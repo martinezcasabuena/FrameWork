@@ -56,12 +56,13 @@ public class Language extends Properties {
 		}
 	
 	public static String LanguageOptions(){
-		String opt="";
+		String opt=Settings.getInstance().getLanguage();
 		String languageOpt[]={Language.getInstance().getProperty("Spanish"),Language.getInstance().getProperty("English"),
 							  Language.getInstance().getProperty("Valencian")}; 
 		String language=Settings.getInstance().getLanguage();
 		
-		opt=Functions.ComboMenu(languageOpt, Language.getInstance().getProperty("language_message"),Language.getInstance().getProperty("language"));
+		opt=Functions.ComboMenuFormats(languageOpt, Language.getInstance().getProperty("language_message"),
+				Language.getInstance().getProperty("language"),opt);
 		switch(language){
 		case "English":
 			switch(opt){
