@@ -2,11 +2,8 @@ package FrameWork_Dani.clases.language;
 
 import java.io.IOException;
 import java.util.Properties;
-
-import javax.swing.JOptionPane;
-
+import FrameWork_Dani.Functions.Functions;
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.utils.Functions;
 
 public class Language extends Properties {
 	private String language=Settings.getInstance().getLanguage();

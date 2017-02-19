@@ -2,20 +2,20 @@ package FrameWork_Dani;
 
 import javax.swing.JOptionPane;
 
+import FrameWork_Dani.Functions.Format;
+import FrameWork_Dani.Functions.Functions;
+import FrameWork_Dani.Functions.Open_Save_Settings.Save_Settings;
 import FrameWork_Dani.clases.Fecha;
 import FrameWork_Dani.clases.Settings;
-import FrameWork_Dani.utils.Format;
-import FrameWork_Dani.utils.Functions;
-import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
 import FrameWork_Dani.clases.language.Language;
-import FrameWork_Dani.modulos.user.utils.Functions_user;
-import FrameWork_Dani.modulos.user.utils.CRUD.Functions_create;
-import FrameWork_Dani.modulos.user.utils.CRUD.Functions_delete;
-import FrameWork_Dani.modulos.user.utils.CRUD.Functions_order;
-import FrameWork_Dani.modulos.user.utils.CRUD.Functions_read;
-import FrameWork_Dani.modulos.user.utils.CRUD.Functions_update;
-import FrameWork_Dani.modulos.user.utils.Functions_open_save.Function_open;
-import FrameWork_Dani.modulos.user.utils.Functions_open_save.Function_save;
+import FrameWork_Dani.modulos.user.Model.BLL.BLL_user.CRUD.Functions_create;
+import FrameWork_Dani.modulos.user.Model.BLL.BLL_user.CRUD.Functions_delete;
+import FrameWork_Dani.modulos.user.Model.BLL.BLL_user.CRUD.Functions_order;
+import FrameWork_Dani.modulos.user.Model.BLL.BLL_user.CRUD.Functions_read;
+import FrameWork_Dani.modulos.user.Model.BLL.BLL_user.CRUD.Functions_update;
+import FrameWork_Dani.modulos.user.Model.DAO.Functions_user;
+import FrameWork_Dani.modulos.user.Model.Functions.Functions_open_save.Function_open;
+import FrameWork_Dani.modulos.user.Model.Functions.Functions_open_save.Function_save;
 
 public class Main {
 
@@ -31,7 +31,8 @@ public class Main {
 					 Language.getInstance().getProperty("settings"),Language.getInstance().getProperty("exit") };
 			String setting[] = {Language.getInstance().getProperty("date_format"),Language.getInstance().getProperty("currency"),Language.getInstance().getProperty("decimal"),
 					Language.getInstance().getProperty("language"),Language.getInstance().getProperty("dummies"),Language.getInstance().getProperty("save_format"),
-					Language.getInstance().getProperty("theme"),Language.getInstance().getProperty("back")};
+					Language.getInstance().getProperty("theme"),Language.getInstance().getProperty("string_options"),
+					Language.getInstance().getProperty("back")};
 					
 			opt = Functions.MenuP(options);
 			if (opt == -1) {
@@ -184,12 +185,15 @@ public class Main {
 								Format.theme();
 								break;
 							case 7:
+								JOptionPane.showMessageDialog(null,Settings.getInstance().toString());
+								break;
+							case 8:
 								Save_Settings.SaveJsonSettings();
 								break;
 							}
 						}
 						
-					} while (opt2 != 7);
+					} while (opt2 != 8);
 					break;
 					
 				case 4:

@@ -7,15 +7,13 @@ import javax.swing.JOptionPane;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
+import FrameWork_Dani.Functions.Functions_theme;
+import FrameWork_Dani.Functions.Open_Save_Settings.Open_Settings;
 import FrameWork_Dani.clases.language.Language;
-import FrameWork_Dani.modulos.user.clases.Admin;
-import FrameWork_Dani.modulos.user.clases.Cliente;
-import FrameWork_Dani.modulos.user.clases.Normal;
-import FrameWork_Dani.modulos.user.clases.Singleton;
-import FrameWork_Dani.utils.Format;
-import FrameWork_Dani.utils.Functions_theme;
-import FrameWork_Dani.utils.Open_Save_Settings.Open_Settings;
-import FrameWork_Dani.utils.Open_Save_Settings.Save_Settings;
+import FrameWork_Dani.modulos.user.Model.clases.Admin;
+import FrameWork_Dani.modulos.user.Model.clases.Cliente;
+import FrameWork_Dani.modulos.user.Model.clases.Normal;
+import FrameWork_Dani.modulos.user.Model.clases.Singleton;
 
 @XStreamAlias("Settings")
 public class Settings implements Serializable {
@@ -104,5 +102,16 @@ public class Settings implements Serializable {
 
 	public void setTheme(String ValueTheme) {
 		theme = ValueTheme;
+	}
+	
+	public String toString(){
+		String cad="";
+		cad=cad+(Language.getInstance().getProperty("date_format")+" : "+this.getFechaForm()+"\n");
+		cad=cad+(Language.getInstance().getProperty("currency")+" : "+this.getCurrency()+"\n");
+		cad=cad+(Language.getInstance().getProperty("decimal")+" : "+this.getDecimal()+"\n");
+		cad=cad+(Language.getInstance().getProperty("language")+" : "+this.getLanguage()+"\n");
+		cad=cad+(Language.getInstance().getProperty("save_format")+" : "+this.getSaveFormat()+"\n");
+		cad=cad+(Language.getInstance().getProperty("theme")+" : "+this.getTheme()+"\n");
+		return cad;
 	}
 }
